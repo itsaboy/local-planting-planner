@@ -1,0 +1,33 @@
+.crop h3 {
+    font-size: 2rem;
+}
+
+.crop img {
+    width: 200px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Wire Frame */
+
+.body-container header {
+    border-bottom: black dashed 1px;
+}
+
+.body-container footer {
+    border-top: black dashed 1px;
+}
+
+.main-container #sidebar1, #sidebar2, #main-section {
+    border: black dashed 1px;
+}
+
+.main-section-container section {
+    border: black dashed 1px;
+}

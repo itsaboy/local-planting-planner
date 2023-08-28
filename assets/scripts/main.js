@@ -1,0 +1,144 @@
+// Gets city name based on zip code input
+const getLocation = async () => {
+    const req = `${baseGeocodeURL}/geo/1.0/zip?zip=${userZipCode}&appid=${geocodeAPIKey}`;
+    const res = await fetch(req);
+    const locationData = await res.json();
+
+    if (res.status === 200) {
+        userCity = locationData.name;
+        $("#current-location").text(userCity);
+    } else {
+        console.log("Error");
+    };
+};
+
+// Gets hardiness zone based on zip code input
+const getHardinessZone = async () => {
+    const req = `${baseHardinessZonesURL}/zipcodes/${userZipCode}`;
+    const res = await fetch(req, {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': hardinessZoneAPIKey,
+            'X-RapidAPI-Host': 'plant-hardiness-zone.p.rapidapi.com'
+        }
+    });
+    const zoneData = await res.json();
+
+    if (res.status === 200) {
+        userZone = zoneData.hardiness_zone;
+        $("#zone-result").text(userZone);
+        saveCityAndZone();
+        renderMainSection(); 
+    } else {
+        console.log("Error");
+    };
+};
+
+// Saves zip code locally
+const saveZipCode = () => {
+    localStorage.setItem("zip code", JSON.stringify(userZipCode));
+};
+
+// Saves city name & hardiness zone locally
+const saveCityAndZone = () => {
+    localStorage.setItem("city name", JSON.stringify(userCity));
+    localStorage.setItem("zone code", JSON.stringify(userZone));
+}
+
+// Loads zip code from local storage
+const loadZipCode = () => {
+    userZipCode = JSON.parse(localStorage.getItem("zip code"));
+}
+
+// Loads city name & hardiness zone from local storage
+const loadCityAndZone = () => {
+    if (userZipCode === 0) {
+        return
+    } else {
+        userCity = JSON.parse(localStorage.getItem("city name"));
+        userZone = JSON.parse(localStorage.getItem("zone code"));
+        $("#current-location").text(userCity);
+        $("#zone-result").text(userZone);
+        zoneArrayLoop();
+    };
+};
+
+// Loads all persisted data
+const loadData = () => {
+    loadZipCode();
+    loadCityAndZone();
+}
+
+const renderMainSection = () => {
+    zoneArrayLoop();
+};
+
+// Renders DOM elements in main section based on hardiness zone
+const zoneArrayLoop = () => { 
+    if (userZone === "1a" || userZone === "1b") {
+        for (let i = 0; i < zoneOneArray.length; i++) {
+            $(`#crop-heading${[i]}`).text(zoneOneArray[i].name);
+            $(`#crop-img${[i]}`).attr("src", zoneOneArray[i].image);
+        };
+    } else if (userZone === "2a" || userZone === "2b") {
+        for (let i = 0; i < zoneTwoArray.length; i++) {
+            $(`#crop-heading${[i]}`).text(zoneTwoArray[i].name);
+            $(`#crop-img${[i]}`).attr("src", zoneTwoArray[i].image);
+        };
+    } else if (userZone === "3a" || userZone === "3b") {
+        for (let i = 0; i < zoneThreeArray.length; i++) {
+            $(`#crop-heading${[i]}`).text(zoneThreeArray[i].name);
+            $(`#crop-img${[i]}`).attr("src", zoneThreeArray[i].image);
+        };
+    } else if (userZone === "4a" || userZone === "4b") {
+        for (let i = 0; i < zoneFourArray.length; i++) {
+            $(`#crop-heading${[i]}`).text(zoneFourArray[i].name);
+            $(`#crop-img${[i]}`).attr("src", zoneFourArray[i].image);
+        };
+    } else if (userZone === "5a" || userZone === "5b") {
+        for (let i = 0; i < zoneFiveArray.length; i++) {
+            $(`#crop-heading${[i]}`).text(zoneFiveArray[i].name);
+            $(`#crop-img${[i]}`).attr("src", zoneFiveArray[i].image);
+        };
+    } else if (userZone === "6a" || userZone === "6b") {
+        for (let i = 0; i < zoneSixArray.length; i++) {
+            $(`#crop-heading${[i]}`).text(zoneSixArray[i].name);
+            $(`#crop-img${[i]}`).attr("src", zoneSixArray[i].image);
+        };
+    } else if (userZone === "7a" || userZone === "7b") {
+        for (let i = 0; i < zoneSevenArray.length; i++) {
+            $(`#crop-heading${[i]}`).text(zoneSevenArray[i].name);
+            $(`#crop-img${[i]}`).attr("src", zoneSevenArray[i].image);
+        };
+    } else if (userZone === "8a" || userZone === "8b") {
+        for (let i = 0; i < zoneEightArray.length; i++) {
+            $(`#crop-heading${[i]}`).text(zoneEightArray[i].name);
+            $(`#crop-img${[i]}`).attr("src", zoneEightArray[i].image);
+        };
+    } else if (userZone === "9a" || userZone === "9b") {
+        for (let i = 0; i < zoneNineArray.length; i++) {
+            $(`#crop-heading${[i]}`).text(zoneNineArray[i].name);
+            $(`#crop-img${[i]}`).attr("src", zoneNineArray[i].image);
+        };
+    } else if (userZone === "10a" || userZone === "10b") {
+        for (let i = 0; i < zoneTenArray.length; i++) {
+            $(`#crop-heading${[i]}`).text(zoneTenArray[i].name);
+            $(`#crop-img${[i]}`).attr("src", zoneTenArray[i].image);
+        };
+    } else if (userZone === "11a" || userZone === "11b") {
+        for (let i = 0; i < zoneElevenArray.length; i++) {
+            $(`#crop-heading${[i]}`).text(zoneElevenArray[i].name);
+            $(`#crop-img${[i]}`).attr("src", zoneElevenArray[i].image);
+        };
+    } else if (userZone === "12a" || userZone === "12b") {
+        for (let i = 0; i < zoneTwelveArray.length; i++) {
+            $(`#crop-heading${[i]}`).text(zoneTwelveArray[i].name);
+            $(`#crop-img${[i]}`).attr("src", zoneTwelveArray[i].image);
+        };
+    } else if (userZone === "13a" || userZone === "13b") {
+        for (let i = 0; i < zoneThirteenArray.length; i++) {
+            $(`#crop-heading${[i]}`).text(zoneThirteenArray[i].name);
+            $(`#crop-img${[i]}`).attr("src", zoneThirteenArray[i].image);
+        };
+    }; 
+};
