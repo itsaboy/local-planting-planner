@@ -4,9 +4,7 @@ $().ready(() => {
         $("#submit-button").on("click", function (event) {
             event.preventDefault();
             userZipCode = $("#zip-input").val();
-            saveZipCode();
             getLocation();
-            getHardinessZone();
         });
     };
 
