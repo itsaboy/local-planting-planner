@@ -1,2 +1,10 @@
 # local-planting-planner
-Website that helps gardeners/farmers know which plants will do best over the winter depending on their location 
+
+## USER STORY
+
+AS A gardener/farmer
+
+I WANT to see what kind of plants and produce I can plant in my area
+ based on ground hardness, temperature, and time of year for my specific climate zone.
+
+SO THAT I can effectively plan what to plant for the current season.
