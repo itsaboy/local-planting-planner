@@ -271,6 +271,8 @@ const rosemary = {
     image: placeholder
 }
 
+// ^^^ Use dictionary ?? ^^^ //
+
 // Specific zone array
 const zoneOneArray = [
     tomato,

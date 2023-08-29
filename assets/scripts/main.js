@@ -5,8 +5,11 @@ const getLocation = async () => {
     const locationData = await res.json();
 
     if (res.status === 200) {
+        saveZipCode();
         userCity = locationData.name;
         $("#current-location").text(userCity);
+        console.log("Success");
+        getHardinessZone();
     } else {
         console.log("Error");
     };
@@ -27,6 +30,7 @@ const getHardinessZone = async () => {
     if (res.status === 200) {
         userZone = zoneData.hardiness_zone;
         $("#zone-result").text(userZone);
+        console.log("Success");
         saveCityAndZone();
         renderMainSection(); 
     } else {
@@ -59,22 +63,19 @@ const loadCityAndZone = () => {
         userZone = JSON.parse(localStorage.getItem("zone code"));
         $("#current-location").text(userCity);
         $("#zone-result").text(userZone);
-        zoneArrayLoop();
+        renderMainSection();
     };
 };
 
-// Loads all persisted data
+// Loads all locally stored data
 const loadData = () => {
     loadZipCode();
     loadCityAndZone();
 }
 
-const renderMainSection = () => {
-    zoneArrayLoop();
-};
-
-// Renders DOM elements in main section based on hardiness zone
-const zoneArrayLoop = () => { 
+/* Loops through the array corresponding with the current
+hardiness zone to populate DOM elements */
+const renderMainSection = () => { 
     if (userZone === "1a" || userZone === "1b") {
         for (let i = 0; i < zoneOneArray.length; i++) {
             $(`#crop-heading${[i]}`).text(zoneOneArray[i].name);
