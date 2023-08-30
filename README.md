@@ -18,3 +18,5 @@ SO THAT I can effectively plan what to plant for the current season.
 
 ![wireframe-img](assets/images/image.png)
 
+## CREDIT
+Hardiness Zone - from https://www.cottagefarmsdirect.com/TheScoop/what-does-hardiness-zone-mean-to-me-90
