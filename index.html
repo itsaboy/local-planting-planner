@@ -12,13 +12,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Internal CSS -->
-        <link rel="stylesheet" href="./assets/css/reset.css">
+        <!--<link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/layout.css">
         <link rel="stylesheet" href="./assets/css/variables.css">
         <link rel="stylesheet" href="./assets/css/style.css">    
-        <link rel="stylesheet" href="./assets/css/queries.css">
+        <link rel="stylesheet" href="./assets/css/queries.css">-->
 
         <!-- External Scripts -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                  }
+                }
+              }
+            }
+          </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
 
         <!-- Internal Scripts -->
@@ -30,15 +42,15 @@
     </head>
 
     <body>
-        <div class="body-container">
+        <div class="grid grid-cols-1 grid-rows-8 h-screen gap-12">
 
-            <header id="header">
-                <div class="header-container">
+            <header id="header" class="border-solid border-2 row-span-1">
+                <div class="grid grid-cols-3 grid-rows-1 h-full place-items-center">
 
                     <form id="zip-form">
-                        <div class="form-container">
-                            <input id="zip-input">
-                            <button id="submit-button">
+                        <div class="grid grid-cols-2 grid-rows-1 place-items-center">
+                            <input id="zip-input" class="border-solid border-4">
+                            <button id="submit-button" class="border-solid border-4 py-1 px-3.5">
                                 Submit
                             </button>
                         </div>
@@ -53,52 +65,10 @@
                 </div>
             </header>
 
-            <main>
-                <div class="main-container">
+            <main id="main" class="row-span-6 w-5/6 mx-auto">
+                <div class="grid grid-cols-2 grid-rows-2 h-full">
 
-                    <section id="main-section">
-                        <div class="main-section-container">
-
-                            <h2 id="main-section-heading">
-                                Recommended plants
-                            </h2>
-
-                            <section id="item0" class="crop">
-                                <h3 id="crop-heading0">
-
-                                </h3>
-                                <img id="crop-img0">
-                            </section>
-
-                            <section id="item1" class="crop">
-                                <h3 id="crop-heading1">
-                                    
-                                </h3>
-                                <img id="crop-img1">
-                            </section>
-
-                            <section id="item2" class="crop">
-                                <h3 id="crop-heading2">
-                                    
-                                </h3>
-                                <img id="crop-img2">
-                            </section>
-
-                            <section id="item3" class="crop">
-                                <h3 id="crop-heading3">
-                                    
-                                </h3>
-                                <img id="crop-img3">
-                            </section>
-
-                            <h2 id="main-section-footer">
-                                <!-- Empty? -->
-                            </h2>
-
-                        </div>
-                    </section>
-
-                    <section id="sidebar1">
+                    <section id="sidebar1" class="border-solid border-2">
                         <div class="sidebar1-container">
 
                             <h2 id="sidebar1-heading">
@@ -111,7 +81,51 @@
                         </div>
                     </section>
 
-                    <section id="sidebar2">
+                    <section id="main-section" class="row-span-2">
+                        <div class="grid grid-cols-2 grid-rows-8 h-full">
+
+                            <section id="main-section-heading" class="border-solid border-2 col-span-2">
+                                <h2 id="main-section-heading">
+                                    Recommended plants
+                                </h2>
+                            </section>
+
+                            <section id="item0" class="border-solid border-2">
+                                <h3 id="crop-heading0">
+
+                                </h3>
+                                <img id="crop-img0">
+                            </section>
+
+                            <section id="item1" class="border-solid border-2">
+                                <h3 id="crop-heading1">
+                                    
+                                </h3>
+                                <img id="crop-img1">
+                            </section>
+
+                            <section id="item2" class="border-solid border-2">
+                                <h3 id="crop-heading2">
+                                    
+                                </h3>
+                                <img id="crop-img2">
+                            </section>
+
+                            <section id="item3" class="border-solid border-2">
+                                <h3 id="crop-heading3">
+                                    
+                                </h3>
+                                <img id="crop-img3">
+                            </section>
+
+                            <section id="main-section-footing" class="border-solid border-2 col-span-2">
+                                <!-- Blank for styling -->
+                            </section>
+
+                        </div>
+                    </section>
+
+                    <section id="sidebar2" class="border-solid border-2">
                         <div class="sidebar2-container">
 
                             <h2 id="sidebar2-heading">
@@ -124,7 +138,7 @@
                 </div>
             </main>
 
-            <footer>
+            <footer id="footer" class="border-solid border-2 row-span-1">
                 <div class="footer-container">
                     <!-- Empty? -->
                 </div>
