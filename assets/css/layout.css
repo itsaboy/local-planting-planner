@@ -98,7 +98,7 @@
     "item0 item1"
     "item2 item3"
     "main-section-footer main-section-footer";
-    grid-template-rows: 1fr repeat(2, 2fr) 0.5fr;
+    grid-template-rows: 0.75fr repeat(2, 2fr) 0.5fr;
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
     width: 80%;
@@ -129,6 +129,8 @@
     grid-area: item3;
 }
 
+/* Main section items */
+
 .crop {
     display: grid;
     width: 100%;
@@ -144,8 +146,8 @@
     grid-template-areas:
     "sidebar1-heading"
     "zone-result";
-    grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     height: 100%;
     place-items: center;
 }
@@ -167,9 +169,35 @@
 .sidebar2-container {
     display: grid;
     grid-template-areas:
-    "sidebar2-heading";
+    "sidebar2-heading sidebar2-heading"
+    "per-heading per-result"
+    "ann-heading ann-result";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     height: 100%;
     place-items: center;
+}
+
+/* Sidebar2 Item IDs */
+
+#sidebar2-heading {
+    grid-area: sidebar2-heading;
+}
+
+#per-heading {
+    grid-area: per-heading;
+}
+
+#per-result {
+    grid-area: per-result;
+}
+
+#ann-heading {
+    grid-area: ann-heading;
+}
+
+#ann-result {
+    grid-area: ann-result;
 }
 
 /* ==========================================================================
@@ -178,7 +206,20 @@
 
 .footer-container {
     display: grid;
+    grid-template-areas:
+    "link1 link2";
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     height: 100%;
+    place-items: center;
 }
 
 /* Footer Item IDs */
+
+#link1 {
+    grid-area: link1;
+}
+
+#link2 {
+    grid-area: link2;
+}
