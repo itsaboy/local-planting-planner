@@ -1,7 +1,7 @@
 // Zone 1
 const tomato = {
     name: "Tomato",
-    image: placeholder
+    image: "./assets/images/tomatoes.jpg"
 }
 
 const beans = {
@@ -190,85 +190,85 @@ const zinnias = {
 //Zone 10
 const peanuts = {
     name: "Peanuts",
-    image: placeholder
+    image: "./assets/images/peanuts.jpg"
 }
 
 const ginger = {
     name: "Ginger",
-    image: placeholder
+    image: "./assets/images/Ginger.jpg"
 }
 
 const agave = {
     name: "Agave",
-    image: placeholder
+    image: "./assets/images/agave.jpg"
 }
 
 const geraniums = {
     name: "Geraniums",
-    image: placeholder
+    image: "./assets/images/geranium.jpg"
 }
 
 //Zone 11
 const beets = {
     name: "Beets",
-    image: placeholder
+    image: "./assets/images/beets.jpg"
 }
 
 const mangos = {
     name: "Mangos",
-    image: placeholder
+    image: "./assets/images/mango.jpg"
 }
 
 const begonias = {
     name: "Begonias",
-    image: placeholder
+    image: "./assets/images/begonia.jpg"
 }
 
 const chives = {
     name: "Chives",
-    image: placeholder
+    image: "./assets/images/chives.jpg"
 }
 
 //Zone 12
 const summerSquash = {
     name: "Summer Squash",
-    image: placeholder
+    image: "./assets/images/summer-squash.jpg"
 }
 
 const peppers = {
     name: "Peppers",
-    image: placeholder
+    image: "./assets/images/peppers.jpg"
 }
 
 const borage = {
     name: "Borage",
-    image: placeholder
+    image: "./assets/images/borage.jpg"
 }
 
 const heliconia = {
     name: "Heliconia",
-    image: placeholder
+    image: "./assets/images/Heliconia.jpg"
 }
 
 //Zone 13
 const africanBreadfruit = {
     name: "African Breadfruit",
-    image: placeholder
+    image: "./assets/images/african-breadfruit.jpg"
 }
 
 const amazonTreeGrape = {
     name: "Amazon Tree Grape",
-    image: placeholder
+    image: "./assets/images/amazon-tree-grape.jpg"
 }
 
 const bushBeans = {
     name: "Bush Beans",
-    image: placeholder
+    image: "./assets/images/bush-beans.jpg"
 }
 
 const rosemary = {
     name: "Rosemary",
-    image: placeholder
+    image: "./assets/images/rosemary.jpg"
 }
 
 // ^^^ Use dictionary ?? ^^^ //

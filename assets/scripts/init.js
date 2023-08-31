@@ -9,6 +9,5 @@ $().ready(() => {
     };
 
     // Function calls
-    loadData();
     submitButton();
 });
