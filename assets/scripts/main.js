@@ -143,3 +143,35 @@ const renderMainSection = () => {
         };
     }; 
 };
+
+//Current Date
+
+// const months = ["Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb"]
+
+// $(document).ready (function() {
+//     var currentDate = dayjs().format("MMM DD, YYYY");
+//     var currentMonth = dayjs().format("MMM");
+//     $("#currentDay").text(currentDate);
+
+//     if (currentMonth = months["Mar"] || months["Apr"] || months["May"]) {
+//         document.body.style.background = ("assets\images\SPRING MAR1 - MAY31.jpg");
+//     }
+//     else if (currentMonth = months["Jun"] || months["Jul"] || months["Aug"]) {
+//         document.body.style.background = ("assets\images\SUMMER JUN1 - AUG 31.jpg");
+//     }
+//     else if (currentMonth = months["Sep"] || months["Oct"] || months["Nov"]) {
+//         document.body.style.background = ("assets\images\FALL SEP1 - NOV 30.jpg");
+//     }
+//     else {
+//         document.body.style.background = ("assets\images\WINTER DEC 1 - FEB28.jpg");
+//     }
+
+// })
+
+
+function myFunction() {
+
+    document.body.style.backgroudnImage = "url"
+}
+
+myFunction();
