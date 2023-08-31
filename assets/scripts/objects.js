@@ -6,86 +6,86 @@ const tomato = {
 
 const beans = {
     name: "Beans",
-    image: placeholder
+    image: "./assets/images/beans.jpg"
 }
 
 const sunflower = {
     name: "Sunflowers",
-    image: placeholder
+    image: "./assets/images/sunflower.jpg"
 }
 
 const lilyOfTheValley = {
     name: "Lily of the Valley",
-    image: placeholder
+    image: "./assets/images/LilyofValley.jpg"
 }
 
 //Zone 2
 const carrots = {
     name: "Carrots",
-    image: placeholder
+    image: "./assets/images/carrot.jpg"
 }
 
 const onions = {
     name: "Onions",
-    image: placeholder
+    image: "./assets/images/onion.jpg"
 }
 
 const poppies = {
     name: "Poppies",
-    image: placeholder
+    image: "./assets/images/poppies.jpg"
 }
 
 const juniper = {
     name: "Juniper",
-    image: placeholder
+    image: "./assets/images/Juniper.jpg"
 }
 
 //Zone 3
 const asparagus = {
     name: "Asparagus",
-    image: placeholder
+    image: "./assets/images/asparagus.jpg"
 }
 
 const cucumbers = {
     name: "Cucumbers",
-    image: placeholder
+    image: "./assets/images/cucumber.jpg"
 }
 
 const garlic = {
     name: "Garlic",
-    image: placeholder
+    image: "./assets/images/garlic.jpg"
 }
 
 const aster = {
     name: "Aster",
-    image: placeholder
+    image: "./assets/images/aster.jpg"
 }
 
 //Zone 4
 const eggplant = {
     name: "Eggplant",
-    image: placeholder
+    image: "./assets/images/eggplant.jpg"
 }
 
 const pumpkin = {
     name: "Pumpkin",
-    image: placeholder
+    image: "./assets/images/pumpkin.jpg"
 }
 
 const iris = {
     name: "Iris",
-    image: placeholder
+    image: "./assets/images/iris.jpg"
 }
 
 const daylily = {
     name: "Daylily",
-    image: placeholder
+    image: "./assets/images/daylily.jpg"
 }
 
 //Zone 5
 const radishes = {
     name: "Radishes",
-    image: placeholder
+    image: "./assets/images/radishes.jpg"
 }
 
 const spinach = {
