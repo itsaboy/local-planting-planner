@@ -2,66 +2,60 @@
 
 <html lang="en">
 
-    <head>
+<head>
 
-        <!-- Metadata -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible">
-        <title>Hardiness Zone Info</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <title>Hardiness Zone Info</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Internal CSS -->
-        <!--<link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- Internal CSS -->
+    <!--<link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/layout.css">
         <link rel="stylesheet" href="./assets/css/variables.css">
         <link rel="stylesheet" href="./assets/css/style.css">    
         <link rel="stylesheet" href="./assets/css/queries.css">-->
 
-        <!-- External Scripts -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-              theme: {
+    <!-- External Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
                 extend: {
-                  colors: {
-                    clifford: '#da373d',
-                  }
+                    colors: {
+                        clifford: '#da373d',
+                    }
                 }
-              }
             }
-          </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
 
-        <!-- Internal Scripts -->
-        <script src="./assets/scripts/global.js" defer></script>
-        <script src="./assets/scripts/objects.js" defer></script>
-        <script src="./assets/scripts/main.js" defer></script>
-        <script src="./assets/scripts/init.js" defer></script>
+    <!-- Internal Scripts -->
+    <script src="./assets/scripts/global.js" defer></script>
+    <script src="./assets/scripts/objects.js" defer></script>
+    <script src="./assets/scripts/main.js" defer></script>
+    <script src="./assets/scripts/init.js" defer></script>
 
-    </head>
+</head>
 
-    <body>
-        <div class="grid grid-cols-1 grid-rows-8 h-screen gap-12">
+<body>
+    <div class="flex-none grid grid-cols-1 grid-rows-8 h-screen gap-12" style="background-image: url('assets/images/grnBackground.png');" alt="green background">
+        <div >
 
-            <header id="header" class="border-solid border-2 row-span-1">
+            <header id="header" class="border-solid border-2 row-span-1 bg-amber-500">
                 <div class="grid grid-cols-3 grid-rows-1 h-full place-items-center">
-
                     <form id="zip-form">
-                        <div class="grid grid-cols-2 grid-rows-1 place-items-center">
+                        <div class="flex-inline place-items-center">
                             <input id="zip-input" class="border-solid border-4">
-                            <button id="submit-button" class="border-solid border-4 py-1 px-3.5">
-                                Submit
-                            </button>
+                            <button id="submit-button"
+                                class="border-solid border-4 py-1 px-3.5 bg-green-600 font-bold text-white">Submit</button>
                         </div>
                     </form>
-                    <h2 id="current-location">
-
-                    </h2>
-                    <h1 id="header-heading">
-                        Hardiness Zone Info
-                    </h1>
-
+                    <h2 id="current-location"></h2>
+                    <h1 id="header-heading" class="font-bold text-4xl text-orange-950">Hardiness Zone Info</h1>
                 </div>
             </header>
 
@@ -99,21 +93,21 @@
 
                             <section id="item1" class="border-solid border-2">
                                 <h3 id="crop-heading1">
-                                    
+
                                 </h3>
                                 <img id="crop-img1">
                             </section>
 
                             <section id="item2" class="border-solid border-2">
                                 <h3 id="crop-heading2">
-                                    
+
                                 </h3>
                                 <img id="crop-img2">
                             </section>
 
                             <section id="item3" class="border-solid border-2">
                                 <h3 id="crop-heading3">
-                                    
+
                                 </h3>
                                 <img id="crop-img3">
                             </section>
@@ -143,8 +137,8 @@
                     <!-- Empty? -->
                 </div>
             </footer>
-
         </div>
-    </body>
-    
+    </div>
+</body>
+
 </html>
