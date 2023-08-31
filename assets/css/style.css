@@ -1,29 +1,32 @@
-.crop h3 {
-    font-size: 2rem;
+/* Custom Tailwind Classes */
+
+.txt-small {
+    font-size: clamp(0.8rem, 1.5vh, 1rem);
 }
 
-.crop img {
-    width: 200px;
+.txt-normal {
+    font-size: clamp(1rem, 2vw + 1px, 1.25rem);
 }
 
-h1 {
-    font-size: 3rem;
+.txt-large {
+    font-size: clamp(1.75rem, 3vh + 1px, 2.5rem);
 }
 
-h2 {
-    font-size: 2rem;
+.txt-larger {
+    font-size: clamp(2.5rem, 4vh + 1px, 3rem);
 }
 
-/* Wire Frame */
-
-.body-container header {
-    border-bottom: black dashed 1px;
+.txt-largest {
+    font-size: clamp(3rem, 5vh + 1px, 3.5rem);
 }
 
-.body-container footer {
-    border-top: black dashed 1px;
+/* Hide and Show */
+
+.hide {
+    visibility: hidden;
 }
 
+<<<<<<< HEAD
 .main-container #sidebar1, #sidebar2, #main-section {
     border: black dashed 1px;
 }
@@ -32,3 +35,8 @@ h2 {
     border: black dashed 1px;
 }
 
+=======
+.show {
+    visibility: visible;
+}
+>>>>>>> e0a7a30042ead047ec68dbaf652443e9155f06fe
