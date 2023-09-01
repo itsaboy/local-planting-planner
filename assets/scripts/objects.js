@@ -64,7 +64,7 @@ const aster = {
 //Zone 4
 const eggplant = {
     name: "Eggplant",
-    image: "./assets/images/eggplant.jpg"
+    image: "./assets/images/eggplant.png"
 }
 
 const pumpkin = {
@@ -90,101 +90,101 @@ const radishes = {
 
 const spinach = {
     name: "Spinach",
-    image: placeholder
+    image: "./assets/images/spinach.jpg"
 }
 
 const apples = {
     name: "Apples",
-    image: placeholder
+    image: "./assets/images/apples.jpg"
 }
 
 const lavender = {
     name: "Lavender",
-    image: placeholder
+    image: "./assets/images/lavender.jpg"
 }
 
 //Zone 6
 const squash = {
     name: "Squash",
-    image: placeholder
+    image: "./assets/images/squash.jpg"
 }
 
 const lettuce = {
     name: "Lettuce",
-    image: placeholder
+    image: "./assets/images/lettuce.jpg"
 }
 
 const oregano = {
     name: "Oregano",
-    image: placeholder
+    image: "./assets/images/oregano.jpg"
 }
 
 const coriander = {
     name: "Coriander",
-    image: placeholder
+    image: "./assets/images/coriander.jpg"
 }
 
 //Zone 7
 const turnips = {
     name: "Turnips",
-    image: placeholder
+    image: "./assets/images/turnip.jpg"
 }
 
 const arugula = {
     name: "Arugula",
-    image: placeholder
+    image: "./assets/images/arugula.jpg"
 }
 
 const peony = {
     name: "Peony",
-    image: placeholder
+    image: "./assets/images/peony.jpg"
 }
 
 const forgetMeNots = {
     name: "Forget-me-nots",
-    image: placeholder
+    image: "./assets/images/forget-me-not.jpg"
 }
 
 //Zone 8
 const watermelon = {
     name: "Watermelon",
-    image: placeholder
+    image: "./assets/images/watermelon.jpg"
 }
 
 const okra = {
     name: "Okra",
-    image: placeholder
+    image: "./assets/images/okra.jpg"
 }
 
 const lantana = {
     name: "Lantana",
-    image: placeholder
+    image: "./assets/images/lantana.jpg"
 }
 
 const sage = {
     name: "Sage",
-    image: placeholder
+    image: "./assets/images/sage.jpg"
 }
 
 //Zone 9
 const broccoli = {
     name: "Broccoli",
-    image: placeholder
+    image: "./assets/images/broccoli.jpg"
 }
 
 const avocado = {
     name: "Avocado",
-    image: placeholder
+    image: "./assets/images/avocado.jpg"
 }
 
 const oranges = {
     name: "Oranges",
-    image: placeholder
+    image: "./assets/images/oranges.jpg"
 }
 
 const zinnias = {
     name: "Zinnias",
-    image: placeholder
+    image: "./assets/images/zinnias.jpg"
 }
 
 //Zone 10
