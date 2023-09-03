@@ -39,4 +39,37 @@
 .show {
     visibility: visible;
 }
->>>>>>> e0a7a30042ead047ec68dbaf652443e9155f06fe
+
+body .body-container {
+    font-family: 'Asap', sans-serif;
+    color: rgba(66, 46, 46, 0.929);
+}
+
+body h1 {
+    letter-spacing: .02em;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+body h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+body h3 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+body p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+body button {
+    font-weight: 700;
+}
+
+#zone-result {
+    font-size: 90px;
+}
