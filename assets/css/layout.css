@@ -29,10 +29,20 @@
 }
 
 /* ==========================================================================
-   Header Container
+   Header Containers
 ========================================================================== */
 
-.header-container {
+.index-header-container {
+    display: grid;
+    grid-template-areas:
+    "header-heading";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    height: 100%;
+    place-items: center;
+}
+
+.result-header-container {
     display: grid;
     grid-template-areas:
     "zip-form current-location header-heading";
@@ -60,6 +70,22 @@
    Main Container
 ========================================================================== */
 
+.search-container {
+    display: grid;
+    grid-template-areas: 
+    "text-1 text-1 text-1"
+    "text-2 zip-form text-3"
+    "text-4 text-4 text-4";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    width: 75%;
+    place-items: center;
+    text-align: center;
+    margin: 0 auto;
+    gap: 3rem;
+}
+
 .main-container {
     display: grid;
     grid-template-areas:
@@ -75,6 +101,23 @@
 }
 
 /* Main Item IDs */
+
+#text-1 {
+    grid-area: text-1;
+    width: 33%
+}
+
+#text-2 {
+    grid-area: text-2;
+}
+
+#text-3 {
+    grid-area: text-3;
+}
+
+#text-4 {
+    grid-area: text-4;
+}
 
 #main-section {
     grid-area: main-section;
