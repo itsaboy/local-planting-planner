@@ -36,26 +36,27 @@
     
 </head>
 
-<body class="bg-cyan-700">
+<body class="">
     <div class="body-container">
 
         <!-- Header -->
-        <header id="header" class="bg-cyan-950 p-5">
+        <header id="header" class="gradient-background p-5">
             <div class="header-container">
                 <form id="zip-form">
                     <div class="form-container">
-                        <input id="zip-input" class="px-4 py-1 txt-normal text-center" placeholder="Enter your zip-code">
-                        <button id="submit-button" class="rounded bg-cyan-400 px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-100 hover:text-cyan-400">
-                            Submit
+                        <input id="zip-input" class="border-slate-950 px-4 py-1 txt-normal text-center" placeholder="Enter your zip-code">
+                        <button id="submit-button" class="rounded-3xl bg-yellowGreen px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-100 hover:text-white m-5">Submit
                         </button>
                     </div>
                 </form>
-                <h2 id="current-location" class="text-cyan-400">
+            
+                <h2 id="current-location" class="text-center text-white">
                     <!-- content injected by main.js -->
                 </h2>
-                <h1 id="header-heading" class="text-white">
-                    Local Planting Planner
+                <h1 id="header-heading" class="text-white text-center grid place-content-center">Local Planting Planner
+                
                 </h1>
+                
             </div>
         </header>
 
@@ -63,25 +64,25 @@
         <main id="main">
             <div class="main-container">
                 <!-- Main section -->
-                <section id="main-section" class="bg-cyan-400 rounded-3xl shadow-2xl hide">
+                <section id="main-section" class="rounded-3xl shadow-2xl hide gradient-background">
                     <div class="main-section-container">
                         <!-- Main section heading-->
-                        <h2 id="main-section-heading" class="">
+                        <h2 id="main-section-heading" class="text-white sm: block">
                             Recommended Plants:
                         </h2>
 
                         <!-- Item one -->
-                        <section id="item0" class="crop">
-                            <h3 id="crop-heading0" class="">
+                        <section id="item0" class="crop rounded-3xl">
+                            <h3 id="crop-heading0" class="text-white">
                                 <!-- content injected by main.js -->
                             </h3>
-                            <img id="crop-img0" class="w-9/12 border-2 border-cyan-950 rounded-2xl shadow-2x1"
+                            <img id="crop-img0" class=" p-15 w-9/12 border-2 border-cyan-950 rounded-2xl shadow-2x1"
                                 alt="image of plant">
                         </section>
 
                         <!-- Item two -->
-                        <section id="item1" class="crop">
-                            <h3 id="crop-heading1" class="">
+                        <section id="item1" class="crop rounded-3xl">
+                            <h3 id="crop-heading1" class="text-white">
                                 <!-- content injected by main.js -->
                             </h3>
                             <img id="crop-img1" class="w-9/12 border-2 border-cyan-950 rounded-2xl shadow-2x1"
@@ -89,8 +90,8 @@
                         </section>
 
                         <!-- Item three -->
-                        <section id="item2" class="crop">
-                            <h3 id="crop-heading2" class="">
+                        <section id="item2" class="crop rounded-3xl">
+                            <h3 id="crop-heading2" class="text-white">
                                 <!-- content injected by main.js -->
                             </h3>
                             <img id="crop-img2" class="w-9/12 border-2 border-cyan-950 rounded-2xl shadow-2x1"
@@ -98,8 +99,8 @@
                         </section>
                         <!-- Item four -->
 
-                        <section id="item3" class="crop">
-                            <h3 id="crop-heading3" class="">
+                        <section id="item3" class="crop rounded-3xl">
+                            <h3 id="crop-heading3" class="text-white">
                                 <!-- content injected by main.js -->
                             </h3>
                             <img id="crop-img3" class="w-9/12 border-2 border-cyan-950 rounded-2xl shadow-2x1"
@@ -114,22 +115,24 @@
                 </section>
 
                 <!-- Sidebar one -->
-                <section id="sidebar1" class="bg-cyan-500 rounded-full shadow-2xl">
+                <section id="sidebar1" class=" gradient-background rounded-2xl shadow-2xl">
                     <div class="sidebar1-container">
-                        <h2 id="sidebar1-heading" class="">
+                        <h2 id="sidebar1-heading" class="text-white">
                             Hardiness Zone:
+                            <hr style="color: black">
                         </h2>
-                        <h1 id="zone-result" class="">
+                        <h2 id="zone-result" class="">
                             <!-- content injected by main.js -->
                         </h2>
                     </div>
                 </section>
 
                 <!-- Sidebar two -->
-                <section id="sidebar2" class="bg-cyan-500 rounded-3xl shadow-2xl">
+                <section id="sidebar2" class=" gradient-background rounded-2xl shadow-2xl">
                     <div class="sidebar2-container">
-                        <h2 id="sidebar2-heading" class="">
+                        <h2 id="sidebar2-heading" class="text-white">
                             Average Date to Plant
+                            <hr>
                         </h2>
                         <h3 id="per-heading" class="hide">
                             Perennials:
@@ -149,13 +152,13 @@
         </main>
 
         <!-- Footer -->
-        <footer id="footer" class="bg-cyan-950 p-5">
+        <footer id="footer" class="bg-white p-5 gradient-background">
             <div class="footer-container">
-                <p id="link1" class="text-cyan-400 txt-small">
+                <p id="link1" class="text-white txt-small">
                     Geolocation provided by <a class="text-slate-100 font-semibold"
                         href="https://openweathermap.org/api/geocoding-api">OpenWeather</a>
                 </p>
-                <p id="link2" class="text-cyan-400 txt-small">
+                <p id="link2" class="text-white txt-small">
                     Hardiness Zone provided by <a class="text-slate-100 font-semibold"
                         href="https://rapidapi.com/fireside-worldwide-fireside-worldwide-default/api/plant-hardiness-zone">RapidAPI</a>
                 </p>

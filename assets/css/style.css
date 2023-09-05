@@ -26,7 +26,7 @@
     visibility: hidden;
 }
 
-<<<<<<< HEAD
+/* HEAD */
 .main-container #sidebar1, #sidebar2, #main-section {
     border: black dashed 1px;
 }
@@ -34,15 +34,16 @@
 .main-section-container section {
     border: black dashed 1px;
 }
+/* ======= */
 
-=======
 .show {
     visibility: visible;
 }
 
 body .body-container {
     font-family: 'Asap', sans-serif;
-    color: rgba(66, 46, 46, 0.929);
+    
+    margin-bottom: 100px;
 }
 
 body h1 {
@@ -71,5 +72,26 @@ body button {
 }
 
 #zone-result {
-    font-size: 90px;
+    font-size: 40px;
+}
+
+
+@media (max-width: 520px) {
+    body .body-container {
+        background-image: none;
+    }
+
+    #header {
+        border: solid black 3px;
+        width: 100%;
+    }
+
+    .sidebar1-container{
+        width: 50vh;
+    }
+
+    .sidebar2-container {
+        width: 50vh;
+        text-align: center;
+    }
 }
