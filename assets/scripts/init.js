@@ -43,7 +43,9 @@ $().ready(() => {
             $("#main").removeClass("restrict");
             $("#footer").removeClass("restrict");
             $("#zip-input").prop("disabled", false);
-            $("#submit-button").prop("disabled", false);   
+            $("#submit-button").prop("disabled", false); 
+            $("#dropdown").prop("disabled", false);
+            $("#load-button").prop("disabled", false);  
         });
     };
 

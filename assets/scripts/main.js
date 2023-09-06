@@ -248,6 +248,8 @@ const errorHandling = () => {
     $("#footer").addClass("restrict");
     $("#zip-input").prop("disabled", true);
     $("#submit-button").prop("disabled", true);
+    $("#dropdown").prop("disabled", true);
+    $("#load-button").prop("disabled", true);
 };
 
 // Message if request error
