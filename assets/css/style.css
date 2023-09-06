@@ -26,7 +26,8 @@
 
 body .body-container {
     font-family: 'Asap', sans-serif;
-    color: rgba(66, 46, 46, 0.929);
+    
+    margin-bottom: 100px;
 }
 
 body h1 {
@@ -55,5 +56,5 @@ body button {
 }
 
 #zone-result {
-    font-size: 90px;
+    font-size: 40px;
 }
