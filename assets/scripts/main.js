@@ -5,12 +5,13 @@ const getLocation = async () => {
     const locationData = await res.json();
 
     if (res.status === 200) {
-        saveZipCode();
         userCity = locationData.name;
         $("#current-location").text(userCity);
         console.log("Success");
         getHardinessZone();
     } else {
+        errorMessage = res.status;
+        badRequest();
         console.log("Error");
     };
 };
@@ -29,56 +30,68 @@ const getHardinessZone = async () => {
 
     if (res.status === 200) {
         userZone = zoneData.hardiness_zone;
-        $("#zone-result").text(userZone);
         console.log("Success");
-        saveCityAndZone();
-        renderMainSection(); 
+        saveData();
+        showResultsPage();
     } else {
+        errorMessage = res.status;
+        badRequest();
         console.log("Error");
     };
 };
 
-// Saves zip code locally
-const saveZipCode = () => {
-    localStorage.setItem("zip code", JSON.stringify(userZipCode));
+// Saves data to dropdownarray then saves the array items locally
+const saveData = () => {
+    dropdownArray.push({
+        zipcode: userZipCode,
+        city: userCity,
+        zone: userZone
+    });
+    for (let i = 0; i < dropdownArray.length; i++) {
+        localStorage.setItem(i, JSON.stringify(dropdownArray[i]));
+    };
+    loadData();
 };
 
-// Saves city name & hardiness zone locally
-const saveCityAndZone = () => {
-    localStorage.setItem("city name", JSON.stringify(userCity));
-    localStorage.setItem("zone code", JSON.stringify(userZone));
-}
+// Loads the locally saved items into the dropdown array
+const loadData = () => {
+    dropdownArray = [];
+    for (let i = 0; i < localStorage.length; i++) {
+        dropdownArray.push(JSON.parse(localStorage[i])); 
+    };
+    populateDropdown();
+};
 
-// Loads zip code from local storage
-const loadZipCode = () => {
-    userZipCode = JSON.parse(localStorage.getItem("zip code"));
-}
-
-// Loads city name & hardiness zone from local storage
-const loadCityAndZone = () => {
-    if (userZipCode === 0) {
-        return
-    } else {
-        userCity = JSON.parse(localStorage.getItem("city name"));
-        userZone = JSON.parse(localStorage.getItem("zone code"));
-        $("#current-location").text(userCity);
-        $("#zone-result").text(userZone);
-        renderMainSection();
+// Adds dropdown array items as options to the dropdown element
+const populateDropdown = () => {
+    $("#dropdown").empty();
+    $("#dropdown").append(`<option selected disabled>City</option>`);     
+    for (let i = 0; i < dropdownArray.length; i++) {
+        let newOption = $(`<option>${dropdownArray[i].city}</option>`);
+        newOption.attr("city", `${dropdownArray[i].city}`).attr("zone", `${dropdownArray[i].zone}`);
+        $("#dropdown").append(newOption);
     };
 };
 
-// Loads all locally stored data
-const loadData = () => {
-    loadZipCode();
-    loadCityAndZone();
-}
+// Page display
+const showResultsPage = () => {
+    $(".result-container").removeClass("hidden");
+    $(".search-container").addClass("hidden");
+    renderMainSection();
+};
+
+const showHomePage = () => {
+    $(".search-container").removeClass("hidden");
+    $(".result-container").addClass("hidden");
+};
 
 /* Loops through the array corresponding with the current
 hardiness zone to populate DOM elements */
-const renderMainSection = () => { 
-    $("#main-section").removeClass("hide");
-    $("#per-heading").removeClass("hide");
-    $("#ann-heading").removeClass("hide");
+const renderMainSection = () => {
+    $("#zone-result").text(userZone);
+    $("#main-section").removeClass("hidden");
+    $("#per-heading").removeClass("hidden");
+    $("#ann-heading").removeClass("hidden");
     // Zone 1
     if (userZone === "1a" || userZone === "1b") {
         for (let i = 0; i < zoneOneArray.length; i++) {
@@ -223,4 +236,38 @@ const renderMainSection = () => {
         $("#per-result").text("March 1st");
         $("#ann-result").text("March 10th");
     }; 
+};
+
+// Show error modal
+const errorHandling = () => {
+    $("#error-modal").removeClass("hidden");
+    $("#header").addClass("restrict");
+    $("#main").addClass("restrict");
+    $("#footer").addClass("restrict");
+    $("#zip-input").prop("disabled", true);
+    $("#submit-button").prop("disabled", true);
+};
+
+// Message if request error
+const badRequest = () => {
+    errorHandling();
+    $("#error-code").text(`Status: ${errorMessage}`);
+};
+
+// Message if zip code is in history
+const inHistory = () => {
+    errorHandling();
+    $("#error-code").text(`${userZipCode} is already in history!`);
+};
+
+// Message if search bar is empty
+const emptySearch = () => {
+    errorHandling();
+    $("#error-code").text(`No input in search bar!`);
+};
+
+// Message if no dropdown option selected
+const emptyDropdown = () => {
+    errorHandling();
+    $("#error-code").text(`No item selected!`);
 };
