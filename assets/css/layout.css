@@ -1,3 +1,10 @@
+
+html {
+    background-image: url("/assets/images/FALL\ SEP1\ -\ NOV\ 30.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* ==========================================================================
    Body Container
 ========================================================================== */
@@ -28,6 +35,9 @@
     grid-area: footer;
 }
 
+.gradient-background {
+    background: radial-gradient(rgb(248, 198, 73),yellowGreen)
+}
 /* ==========================================================================
    Header Container
 ========================================================================== */
@@ -191,6 +201,7 @@
 
 /* Main Section Item IDs */
 
+
 #main-section-heading {
     grid-area: main-section-heading;
 }
@@ -223,6 +234,10 @@
 /* Sidebar1 Container
 ========================================================================== */
 
+#sidebar1 {
+    height: 50%;
+}
+
 .sidebar1-container {
     display: grid;
     grid-template-areas:
@@ -247,6 +262,10 @@
 
 /* Sidebar2 Container
 ========================================================================== */
+
+#sidebar2{
+    height: 50%;
+}
 
 .sidebar2-container {
     display: grid;
