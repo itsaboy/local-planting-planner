@@ -58,24 +58,3 @@ body button {
 #zone-result {
     font-size: 40px;
 }
-
-
-@media (max-width: 520px) {
-    body .body-container {
-        background-image: none;
-    }
-
-    #header {
-        border: solid black 3px;
-        width: 100%;
-    }
-
-    .sidebar1-container{
-        width: 50vh;
-    }
-
-    .sidebar2-container {
-        width: 50vh;
-        text-align: center;
-    }
-}
