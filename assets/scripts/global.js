@@ -2,6 +2,13 @@
 let userZipCode = 0;
 let userCity = "";
 let userZone = "";
+let zipPlusCity;
+
+// Saved cities
+dropdownArray = [];
+
+// Current page
+let currentPage = "home";
 
 // API info
 const baseGeocodeURL = "https://api.openweathermap.org";

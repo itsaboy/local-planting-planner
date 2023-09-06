@@ -20,14 +20,8 @@
     font-size: clamp(3rem, 5vh + 1px, 3.5rem);
 }
 
-/* Hide and Show */
-
-.hide {
-    visibility: hidden;
-}
-
-.show {
-    visibility: visible;
+.restrict {
+    opacity: 0.5;
 }
 
 body .body-container {

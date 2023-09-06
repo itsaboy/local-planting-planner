@@ -8,7 +8,7 @@
     "header"
     "main"
     "footer";
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 9fr 5rem;
     grid-template-columns: 1fr;
     height: 100vh;
     gap: 3rem;
@@ -29,20 +29,10 @@
 }
 
 /* ==========================================================================
-   Header Containers
+   Header Container
 ========================================================================== */
 
-.index-header-container {
-    display: grid;
-    grid-template-areas:
-    "header-heading";
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    height: 100%;
-    place-items: center;
-}
-
-.result-header-container {
+.header-container {
     display: grid;
     grid-template-areas:
     "zip-form current-location header-heading";
@@ -66,16 +56,59 @@
     grid-area: header-heading;
 }
 
+/* Form Container
+========================================================================== */
+
+.form-container {
+    display: grid;
+    grid-template-areas:
+    "search-label zip-input submit-button"
+    "history-label dropdown load-button";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 3fr 1fr;
+    width: 75%;
+    height: 100%;
+    place-items: center;
+}
+
+/* Form Item IDs */
+
+#search-label {
+    grid-area: search-label;
+}
+
+#history-label {
+    grid-area: history-label;
+}
+
+#zip-input {
+    grid-area: zip-input;
+}
+
+#submit-button {
+    grid-area: submit-button;
+    place-self: center start;
+}
+
+#dropdown {
+    grid-area: dropdown;
+}
+
+#load-button {
+    grid-area: load-button;
+    place-self: center start;
+}
+
 /* ==========================================================================
-   Main Container
+   Main Containers
 ========================================================================== */
 
 .search-container {
     display: grid;
     grid-template-areas: 
-    "text-1 text-1 text-1"
-    "text-2 zip-form text-3"
-    "text-4 text-4 text-4";
+    "top top top"
+    "left center right"
+    "bottom bottom bottom";
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     height: 100%;
@@ -86,7 +119,30 @@
     gap: 3rem;
 }
 
-.main-container {
+/* Search Item Ids */
+
+#top {
+    grid-area: top;
+    width: 33%
+}
+
+#left {
+    grid-area: left;
+}
+
+#center {
+    grid-area: center;
+}
+
+#right {
+    grid-area: right;
+}
+
+#bottom {
+    grid-area: bottom;
+}
+
+.result-container {
     display: grid;
     grid-template-areas:
     "sidebar1 main-section"
@@ -101,23 +157,6 @@
 }
 
 /* Main Item IDs */
-
-#text-1 {
-    grid-area: text-1;
-    width: 33%
-}
-
-#text-2 {
-    grid-area: text-2;
-}
-
-#text-3 {
-    grid-area: text-3;
-}
-
-#text-4 {
-    grid-area: text-4;
-}
 
 #main-section {
     grid-area: main-section;
@@ -265,4 +304,25 @@
 
 #link2 {
     grid-area: link2;
+}
+
+/* Error Modal Container
+========================================================================== */
+
+#error-modal {
+    width: 25%;
+    height: 25%;
+    margin: auto;
+}
+
+.modal-container {
+    display: grid;
+    grid-template-areas:
+    "error-txt"
+    "error-code"
+    "error-button";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    height: 100%;
+    place-items: center;
 }
