@@ -6,7 +6,6 @@ const getLocation = async () => {
 
     if (res.status === 200) {
         userCity = locationData.name;
-        $("#current-location").text(userCity);
         console.log("Success");
         getHardinessZone();
     } else {
@@ -85,13 +84,16 @@ const showHomePage = () => {
     $(".result-container").addClass("hidden");
 };
 
-/* Loops through the array corresponding with the current
-hardiness zone to populate DOM elements */
+/* Populates current location and zone result DOM elements, reveals hidden sections,
+loops through the array corresponding with the current hardiness zone to populate
+rest of DOM elements */
 const renderMainSection = () => {
+    $("#current-location").text(userCity);
     $("#zone-result").text(userZone);
     $("#main-section").removeClass("hidden");
     $("#per-heading").removeClass("hidden");
     $("#ann-heading").removeClass("hidden");
+
     // Zone 1
     if (userZone === "1a" || userZone === "1b") {
         for (let i = 0; i < zoneOneArray.length; i++) {
