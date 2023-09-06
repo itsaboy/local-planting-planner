@@ -13,13 +13,13 @@
 
 
     <!-- External Scripts -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
-
-        <!-- Internal CSS -->
-        <link rel="stylesheet" href="./assets/css/reset.css">
-        <link rel="stylesheet" href="./assets/css/layout.css">
-        <link rel="stylesheet" href="./assets/css/style.css">
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+ 
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- Internal Scripts -->
     <script src="./assets/scripts/global.js" defer></script>
@@ -38,23 +38,37 @@
 
 <body class="">
     <div class="body-container">
-
+        
         <!-- Header -->
-        <header id="header" class="gradient-background p-5">
+        <header id="header" class="bg-cyan-950 p-5">
             <div class="header-container">
                 <form id="zip-form">
                     <div class="form-container">
-                        <input id="zip-input" class="border-slate-950 px-4 py-1 txt-normal text-center" placeholder="Enter your zip-code">
-                        <button id="submit-button" class="rounded-3xl bg-yellowGreen px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-100 hover:text-white m-5">Submit
+                        <label id="search-label" for="zip-input" class="text-slate-100 font-semibold">
+                            Search:
+                        </label>
+                        <input id="zip-input" class="w-48 px-4 txt-normal text-center">
+                        <button id="submit-button" class="w-32 rounded bg-cyan-400 px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-100 hover:text-cyan-400">
+                            Submit
+                        </button>
+                        <label id="history-label" for="dropwdown" class="text-slate-100 font-semibold">
+                            History:
+                        </label>
+                        <select id="dropdown" class="w-48 px-4 txt-normal text-left">
+                            <option>
+                                <!-- content injected by main.js -->
+                            </option>
+                        </select>
+                        <button id="load-button" class="w-32 rounded bg-cyan-400 px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-100 hover:text-cyan-400">
+                            Load
                         </button>
                     </div>
                 </form>
-            
-                <h2 id="current-location" class="text-center text-white">
+                <h2 id="current-location" class="text-cyan-400">
                     <!-- content injected by main.js -->
                 </h2>
-                <h1 id="header-heading" class="text-white text-center grid place-content-center">Local Planting Planner
-                
+                <h1 id="header-heading" class="text-white">
+                    Local Planting Planner
                 </h1>
                 
             </div>
@@ -62,48 +76,78 @@
 
         <!-- Main -->
         <main id="main">
-            <div class="main-container">
+            <!--Front page-->
+            <div class="search-container">
+                <section id="top">
+                    <p>
+                        Tell us where you're from! This way we can provide you with plants and veggies that will grow well in your particular zip code!
+                    </p>
+                </section>
+                <section id="left">
+                    <p>
+                        place anything else here
+                    </p>
+                </section>
+                <section id="center">
+                    <p>
+                        placeholder
+                    </p>
+                </section>
+                <section id="right">
+                    <p>
+                        place anything else here
+                    </p>
+                </section>
+                <section id="bottom">
+                    <p>
+                        Hardiness zone description
+                    </p>
+                </section>
+            </div>
+
+            <!--Results page-->
+            <div class="result-container hidden">
                 <!-- Main section -->
-                <section id="main-section" class="rounded-3xl shadow-2xl hide gradient-background">
+                <section id="main-section" class="bg-cyan-400 rounded-3xl shadow-2xl hidden">
                     <div class="main-section-container">
                         <!-- Main section heading-->
-                        <h2 id="main-section-heading" class="text-white sm: block">
+                        <h2 id="main-section-heading" class="">
                             Recommended Plants:
                         </h2>
 
                         <!-- Item one -->
-                        <section id="item0" class="crop rounded-3xl">
-                            <h3 id="crop-heading0" class="text-white">
+                        <section id="item0" class="crop">
+                            <h3 id="crop-heading0" class="">
                                 <!-- content injected by main.js -->
                             </h3>
-                            <img id="crop-img0" class=" p-15 w-9/12 border-2 border-cyan-950 rounded-2xl shadow-2x1"
+                            <img id="crop-img0" class="w-2/3 border-2 border-cyan-950 rounded-2xl shadow-2x1 hover:scale-150 transition duration-300 cursor-pointer"
                                 alt="image of plant">
                         </section>
 
                         <!-- Item two -->
-                        <section id="item1" class="crop rounded-3xl">
-                            <h3 id="crop-heading1" class="text-white">
+                        <section id="item1" class="crop">
+                            <h3 id="crop-heading1" class="">
                                 <!-- content injected by main.js -->
                             </h3>
-                            <img id="crop-img1" class="w-9/12 border-2 border-cyan-950 rounded-2xl shadow-2x1"
+                            <img id="crop-img1" class="w-2/3 border-2 border-cyan-950 rounded-2xl shadow-2x1 hover:scale-150 transition duration-300 cursor-pointer"
                                 alt="image of plant">
                         </section>
 
                         <!-- Item three -->
-                        <section id="item2" class="crop rounded-3xl">
-                            <h3 id="crop-heading2" class="text-white">
+                        <section id="item2" class="crop">
+                            <h3 id="crop-heading2" class="">
                                 <!-- content injected by main.js -->
                             </h3>
-                            <img id="crop-img2" class="w-9/12 border-2 border-cyan-950 rounded-2xl shadow-2x1"
+                            <img id="crop-img2" class="w-2/3 border-2 border-cyan-950 rounded-2xl shadow-2x1 hover:scale-150 transition duration-300 cursor-pointer"
                                 alt="image of plant">
                         </section>
                         <!-- Item four -->
 
-                        <section id="item3" class="crop rounded-3xl">
-                            <h3 id="crop-heading3" class="text-white">
+                        <section id="item3" class="crop">
+                            <h3 id="crop-heading3" class="">
                                 <!-- content injected by main.js -->
                             </h3>
-                            <img id="crop-img3" class="w-9/12 border-2 border-cyan-950 rounded-2xl shadow-2x1"
+                            <img id="crop-img3" class="w-2/3 border-2 border-cyan-950 rounded-2xl shadow-2x1 hover:scale-150 transition duration-300 cursor-pointer"
                                 alt="image of plant">
                         </section>
 
@@ -115,32 +159,30 @@
                 </section>
 
                 <!-- Sidebar one -->
-                <section id="sidebar1" class=" gradient-background rounded-2xl shadow-2xl">
+                <section id="sidebar1" class="bg-cyan-500 rounded-full shadow-2xl">
                     <div class="sidebar1-container">
-                        <h2 id="sidebar1-heading" class="text-white">
+                        <h2 id="sidebar1-heading" class="">
                             Hardiness Zone:
-                            <hr style="color: black">
                         </h2>
-                        <h2 id="zone-result" class="">
+                        <h1 id="zone-result" class="">
                             <!-- content injected by main.js -->
                         </h2>
                     </div>
                 </section>
 
                 <!-- Sidebar two -->
-                <section id="sidebar2" class=" gradient-background rounded-2xl shadow-2xl">
+                <section id="sidebar2" class="bg-cyan-500 rounded-3xl shadow-2xl">
                     <div class="sidebar2-container">
-                        <h2 id="sidebar2-heading" class="text-white">
+                        <h2 id="sidebar2-heading" class="">
                             Average Date to Plant
-                            <hr>
                         </h2>
-                        <h3 id="per-heading" class="hide">
+                        <h3 id="per-heading" class="hidden">
                             Perennials:
                         </h3>
                         <p id="per-result">
                             <!-- content injected by main.js -->
                         </p>
-                        <h3 id="ann-heading" class="hide">
+                        <h3 id="ann-heading" class="hidden">
                             Annuals:
                         </h3>
                         <p id="ann-result">
@@ -165,6 +207,20 @@
             </div>
         </footer>
 
+        <!-- Error Modal -->
+        <section id="error-modal" class="hidden absolute inset-0 bg-rose-800 rounded-3xl shadow-2xl">
+            <div class="modal-container">
+                <h2 id="error-txt" class="txt-large text-rose-200">
+                    Error!
+                </h2>
+                <p id="error-code" class="txt-normal text-rose-200">
+                </p>
+                <button id="error-button" class="w-24 bg-rose-400 px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-100 hover:text-rose-400 txt-normal">
+                    Ok
+                </button>
+            </div>
+        </section>
+        
     </div>
 
         <script

@@ -174,7 +174,7 @@ const broccoli = {
 
 const avocado = {
     name: "Avocado",
-    image: "./assets/images/avocado.jpg"
+    image: "./assets/images/acocado.jpg"
 }
 
 const oranges = {
