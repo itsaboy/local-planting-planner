@@ -1,32 +1,19 @@
-/* Custom Tailwind Classes */
-
-.txt-small {
-    font-size: clamp(0.8rem, 1.5vh, 1rem);
-}
-
-.txt-normal {
-    font-size: clamp(1rem, 2vw + 1px, 1.25rem);
-}
-
-.txt-large {
-    font-size: clamp(1.75rem, 3vh + 1px, 2.5rem);
-}
-
-.txt-larger {
-    font-size: clamp(2.5rem, 4vh + 1px, 3rem);
-}
-
-.txt-largest {
-    font-size: clamp(3rem, 5vh + 1px, 3.5rem);
+@font-face {
+    font-family: Asap;
+    src: url("../fonts/Asap.ttf");
 }
 
 .restrict {
     opacity: 0.5;
 }
 
+.gradient-background {
+    background: radial-gradient(rgb(248, 198, 73),yellowGreen)
+}
+
 body .body-container {
-    font-family: 'Asap', sans-serif;
-    color: rgba(66, 46, 46, 0.929);
+    font-family: Asap;
+    margin-bottom: 100px;
 }
 
 body h1 {
@@ -54,6 +41,12 @@ body button {
     font-weight: 700;
 }
 
+#main {
+    background-image: url("/assets/images/FALL\ SEP1\ -\ NOV\ 30.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #zone-result {
-    font-size: 90px;
+    font-size: 40px;
 }
