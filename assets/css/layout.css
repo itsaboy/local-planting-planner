@@ -104,19 +104,22 @@
 ========================================================================== */
 
 .search-container {
-    display: grid;
-    grid-template-areas: 
-    "top top top"
-    "left center right"
-    "bottom bottom bottom";
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    height: 100%;
-    width: 75%;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
     text-align: center;
-    margin: 0 auto;
-    gap: 3rem;
+    padding: 1.5rem;
+
+}
+.card {
+    padding: 10px;
+    margin: 5px;
+    background-color: #8649a2;
+    height: auto;
+    width: auto;
+
 }
 
 /* Search Item Ids */
