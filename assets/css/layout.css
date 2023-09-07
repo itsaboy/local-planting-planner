@@ -182,7 +182,7 @@
     "main-section-footer main-section-footer";
     grid-template-rows: 0.75fr repeat(2, 2fr) 0.5fr;
     grid-template-columns: repeat(2, 1fr);
-    height: 80%;
+    height: 100%;
     width: 80%;
     place-items: center;
     margin: 0 auto;
@@ -226,6 +226,7 @@
 
 #sidebar1 {
     height: 50%;
+    margin: auto 0;
 }
 
 .sidebar1-container {
@@ -237,6 +238,7 @@
     grid-template-columns: 1fr;
     height: 100%;
     place-items: center;
+    margin: auto 0;
 }
 
 /* Sidebar1 Item Ids */
@@ -254,6 +256,7 @@
 
 #sidebar2{
     height: 50%;
+    margin: auto 0;
 }
 
 .sidebar2-container {
