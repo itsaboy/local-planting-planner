@@ -3,32 +3,32 @@
 <html lang="en">
 
 <head>
-     <!-- Metadata -->
-     <meta charset="utf-8">
-     <meta http-equiv="X-UA-Compatible">
-     <title>Local Planting Planner</title>
-     <meta name="description" content="">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
- 
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <title>Local Planting Planner</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- External Scripts -->
-     <script src="https://cdn.tailwindcss.com"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
- 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
     <!-- Internal CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/layout.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
-     <!-- Internal Scripts -->
-     <script src="./assets/scripts/global.js" defer></script>
-     <script src="./assets/scripts/objects.js" defer></script>
-     <script src="./assets/scripts/main.js" defer></script>
-     <script src="./assets/scripts/init.js" defer></script>    
+    <!-- Internal Scripts -->
+    <script src="./assets/scripts/global.js" defer></script>
+    <script src="./assets/scripts/objects.js" defer></script>
+    <script src="./assets/scripts/main.js" defer></script>
+    <script src="./assets/scripts/init.js" defer></script>
 </head>
 
 <body>
     <div class="body-container">
-        
+
         <!-- Header -->
         <header id="header" class="gradient-background p-5">
             <div class="header-container">
@@ -37,8 +37,9 @@
                         <label id="search-label" for="zip-input" class="text-yellow-950 font-semibold">
                             Search:
                         </label>
-                        <input id="zip-input" class="w-48 px-4 txt-normal text-center" placeholder="Enter Zip-Code">
-                        <button id="submit-button" class="w-32 rounded-3xl px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-300 hover:text-white">
+                        <input id="zip-input" class="w-42 px-3 txt-normal text-center" placeholder="Enter Zip-Code">
+                        <button id="submit-button"
+                            class="w-32 rounded-3xl px-3 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-300 hover:text-white">
                             Submit
                         </button>
                         <label id="history-label" for="dropwdown" class="text-yellow-950  font-semibold">
@@ -49,7 +50,8 @@
                                 <!-- content injected by main.js -->
                             </option>
                         </select>
-                        <button id="load-button" class="w-32 rounded-3xl  px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-100 hover:text-white">
+                        <button id="load-button"
+                            class="w-32 rounded-3xl  px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-100 hover:text-white">
                             Load
                         </button>
                     </div>
@@ -57,7 +59,7 @@
                 <h2 id="current-location" class="text-yellow-950">
                     <!-- content injected by main.js -->
                 </h2>
-                <h1 id="header-heading" class="text-yellow-950 drop-shadow-xl">
+                <h1 id="header-heading">
                     Local Planting Planner
                 </h1>
             </div>
@@ -66,28 +68,15 @@
         <main id="main">
             <!--Front page-->
             <div class="search-container">
-                <section id="top">
-                    <p>
-                        Tell us where you're from! This way we can provide you with plants and veggies that will grow well in your particular zip code!
-                    </p>
+                <section class = "bg-gray-50/60 p-3 rounded">
+                        <h2>Tell us where you're from!</h2>
+                        <p>This way we can provide you with plants and veggies that will grow well in your particular zip code!</p>
                 </section>
-                <section id="left">
-                    <p>
-                        place anything else here
-                    </p>
-                </section>
-                <section id="center">
-                    <p>
-                        placeholder
-                    </p>
-                </section>
-                <section id="right">
-                    <p>
-                        place anything else here
-                    </p>
+                <section id="center" class="card">
+                    <img src="assets/images/map_720.jpg" alt="Hardiness Zone">
                 </section>
                 <section id="bottom">
-                    <p>
+                    <p class = "bg-gray-50/60 p-3 rounded">
                         Hardiness zone description
                     </p>
                 </section>
@@ -108,7 +97,8 @@
                             <h3 id="crop-heading0" class="">
                                 <!-- content injected by main.js -->
                             </h3>
-                            <img id="crop-img0" class="w-2/3 border-2 border-cyan-950 rounded-2xl shadow-2x1 hover:scale-150 transition duration-300 cursor-pointer"
+                            <img id="crop-img0"
+                                class="w-2/3 border-2 border-cyan-950 rounded-2xl shadow-2x1 hover:scale-150 transition duration-300 cursor-pointer"
                                 alt="image of plant">
                         </section>
 
@@ -117,7 +107,8 @@
                             <h3 id="crop-heading1" class="">
                                 <!-- content injected by main.js -->
                             </h3>
-                            <img id="crop-img1" class="w-2/3 border-2 border-cyan-950 rounded-2xl shadow-2x1 hover:scale-150 transition duration-300 cursor-pointer"
+                            <img id="crop-img1"
+                                class="w-2/3 border-2 border-cyan-950 rounded-2xl shadow-2x1 hover:scale-150 transition duration-300 cursor-pointer"
                                 alt="image of plant">
                         </section>
 
@@ -126,7 +117,8 @@
                             <h3 id="crop-heading2" class="">
                                 <!-- content injected by main.js -->
                             </h3>
-                            <img id="crop-img2" class="w-2/3 border-2 border-cyan-950 rounded-2xl shadow-2x1 hover:scale-150 transition duration-300 cursor-pointer"
+                            <img id="crop-img2"
+                                class="w-2/3 border-2 border-cyan-950 rounded-2xl shadow-2x1 hover:scale-150 transition duration-300 cursor-pointer"
                                 alt="image of plant">
                         </section>
                         <!-- Item four -->
@@ -135,7 +127,8 @@
                             <h3 id="crop-heading3" class="">
                                 <!-- content injected by main.js -->
                             </h3>
-                            <img id="crop-img3" class="w-2/3 border-2 border-cyan-950 rounded-2xl shadow-2x1 hover:scale-150 transition duration-300 cursor-pointer"
+                            <img id="crop-img3"
+                                class="w-2/3 border-2 border-cyan-950 rounded-2xl shadow-2x1 hover:scale-150 transition duration-300 cursor-pointer"
                                 alt="image of plant">
                         </section>
 
@@ -154,7 +147,7 @@
                         </h2>
                         <h1 id="zone-result" class="">
                             <!-- content injected by main.js -->
-                        </h2>
+                            </h2>
                     </div>
                 </section>
 
@@ -183,12 +176,12 @@
 
         <footer id="footer" class="gradient-background p-5">
             <div class="footer-container">
-                <p id="link1" class="text-yellow-950 txt-small">
-                    Geolocation provided by <a class="text-yellow-950 font-semibold underline"
+                <p id="link1">
+                    Geolocation provided by <a class="text-yellow-950 font-black underline"
                         href="https://openweathermap.org/api/geocoding-api">OpenWeather</a>
                 </p>
-                <p id="link2" class="text-yellow-950 txt-small">
-                    Hardiness Zone provided by <a class="text-yellow-950 font-semibold underline"
+                <p id="link2">
+                    Hardiness Zone provided by <a class="text-yellow-950 font-black underline"
                         href="https://rapidapi.com/fireside-worldwide-fireside-worldwide-default/api/plant-hardiness-zone">RapidAPI</a>
                 </p>
             </div>
@@ -202,20 +195,18 @@
                 </h2>
                 <p id="error-code" class="txt-normal text-rose-200">
                 </p>
-                <button id="error-button" class="w-24 bg-rose-400 px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-100 hover:text-rose-400 txt-normal">
+                <button id="error-button"
+                    class="w-24 bg-rose-400 px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-100 hover:text-rose-400 txt-normal">
                     Ok
                 </button>
             </div>
         </section>
-        
+
     </div>
 
-        <script
-        src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-        crossorigin="anonymous"
-      ></script>
-  
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+
 
 </body>
 
