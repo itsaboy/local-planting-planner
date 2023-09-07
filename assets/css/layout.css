@@ -8,10 +8,10 @@
     "header"
     "main"
     "footer";
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 9fr 5rem;
     grid-template-columns: 1fr;
     height: 100vh;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 /* Body Item IDs */
@@ -56,11 +56,93 @@
     grid-area: header-heading;
 }
 
-/* ==========================================================================
-   Main Container
+/* Form Container
 ========================================================================== */
 
-.main-container {
+.form-container {
+    display: grid;
+    grid-template-areas:
+    "search-label zip-input submit-button"
+    "history-label dropdown load-button";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 3fr 1fr;
+    width: 75%;
+    height: 100%;
+    place-items: center;
+}
+
+/* Form Item IDs */
+
+#search-label {
+    grid-area: search-label;
+}
+
+#history-label {
+    grid-area: history-label;
+}
+
+#zip-input {
+    grid-area: zip-input;
+}
+
+#submit-button {
+    grid-area: submit-button;
+    place-self: center start;
+}
+
+#dropdown {
+    grid-area: dropdown;
+}
+
+#load-button {
+    grid-area: load-button;
+    place-self: center start;
+}
+
+/* ==========================================================================
+   Main Containers
+========================================================================== */
+
+.search-container {
+    display: grid;
+    grid-template-areas: 
+    "top top top"
+    "left center right"
+    "bottom bottom bottom";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    width: 75%;
+    place-items: center;
+    text-align: center;
+    margin: 0 auto;
+    gap: 3rem;
+}
+
+/* Search Item Ids */
+
+#top {
+    grid-area: top;
+    width: 33%
+}
+
+#left {
+    grid-area: left;
+}
+
+#center {
+    grid-area: center;
+}
+
+#right {
+    grid-area: right;
+}
+
+#bottom {
+    grid-area: bottom;
+}
+
+.result-container {
     display: grid;
     grid-template-areas:
     "sidebar1 main-section"
@@ -78,6 +160,8 @@
 
 #main-section {
     grid-area: main-section;
+    height: 95%;
+    margin: auto;
 }
 
 #sidebar1 {
@@ -108,6 +192,7 @@
 }
 
 /* Main Section Item IDs */
+
 
 #main-section-heading {
     grid-area: main-section-heading;
@@ -141,6 +226,11 @@
 /* Sidebar1 Container
 ========================================================================== */
 
+#sidebar1 {
+    height: 50%;
+    margin: auto 0;
+}
+
 .sidebar1-container {
     display: grid;
     grid-template-areas:
@@ -150,6 +240,7 @@
     grid-template-columns: 1fr;
     height: 100%;
     place-items: center;
+    margin: auto 0;
 }
 
 /* Sidebar1 Item Ids */
@@ -160,11 +251,15 @@
 
 #zone-result {
     grid-area: zone-result;
-    place-self: start center;
 }
 
 /* Sidebar2 Container
 ========================================================================== */
+
+#sidebar2{
+    height: 50%;
+    margin: auto 0;
+}
 
 .sidebar2-container {
     display: grid;
@@ -222,4 +317,25 @@
 
 #link2 {
     grid-area: link2;
+}
+
+/* Error Modal Container
+========================================================================== */
+
+#error-modal {
+    width: 25%;
+    height: 25%;
+    margin: auto;
+}
+
+.modal-container {
+    display: grid;
+    grid-template-areas:
+    "error-txt"
+    "error-code"
+    "error-button";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    height: 100%;
+    place-items: center;
 }
