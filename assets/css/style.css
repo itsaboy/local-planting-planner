@@ -47,6 +47,10 @@ body button {
     background-size: cover;
 }
 
+.gradient-background {
+    background: radial-gradient(rgb(248, 198, 73),yellowGreen)
+}
+
 #zone-result {
     font-size: 40px;
 }
