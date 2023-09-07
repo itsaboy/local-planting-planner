@@ -18,7 +18,7 @@ html {
     grid-template-rows: 1fr 9fr 5rem;
     grid-template-columns: 1fr;
     height: 100vh;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 /* Body Item IDs */
@@ -236,6 +236,7 @@ html {
 
 #sidebar1 {
     height: 50%;
+    margin: auto 0;
 }
 
 .sidebar1-container {
@@ -247,6 +248,7 @@ html {
     grid-template-columns: 1fr;
     height: 100%;
     place-items: center;
+    margin: auto 0;
 }
 
 /* Sidebar1 Item Ids */
@@ -257,7 +259,6 @@ html {
 
 #zone-result {
     grid-area: zone-result;
-    place-self: start center;
 }
 
 /* Sidebar2 Container
@@ -265,6 +266,7 @@ html {
 
 #sidebar2{
     height: 50%;
+    margin: auto 0;
 }
 
 .sidebar2-container {
