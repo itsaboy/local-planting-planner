@@ -14,10 +14,11 @@
      <script src="https://cdn.tailwindcss.com"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
  
-    <!-- Internal CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/layout.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/queries.css">
 
      <!-- Internal Scripts -->
      <script src="./assets/scripts/global.js" defer></script>
@@ -26,38 +27,38 @@
      <script src="./assets/scripts/init.js" defer></script>    
 </head>
 
-<body>
+<body class="bg-orange-900">
     <div class="body-container">
         
         <!-- Header -->
         <header id="header" class="gradient-background p-5">
             <div class="header-container">
-                <form id="zip-form">
+                <form id="zip-form" class="normal-txt">
                     <div class="form-container">
                         <label id="search-label" for="zip-input" class="text-yellow-950 font-semibold">
                             Search:
                         </label>
-                        <input id="zip-input" class="w-48 px-4 txt-normal text-center" placeholder="Enter Zip-Code">
+                        <input id="zip-input" class="w-48 px-4 text-center" placeholder="Enter Zip-Code">
                         <button id="submit-button" class="w-32 rounded-3xl px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-300 hover:text-white">
                             Submit
                         </button>
                         <label id="history-label" for="dropwdown" class="text-yellow-950  font-semibold">
                             History:
                         </label>
-                        <select id="dropdown" class="w-48 px-4 txt-normal text-left">
+                        <select id="dropdown" class="w-48 px-4 text-left">
                             <option>
                                 <!-- content injected by main.js -->
                             </option>
                         </select>
-                        <button id="load-button" class="w-32 rounded-3xl  px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-100 hover:text-white">
+                        <button id="load-button" class="w-32 rounded-3xl px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-100 hover:text-white">
                             Load
                         </button>
                     </div>
                 </form>
-                <h2 id="current-location" class="text-yellow-950">
+                <h2 id="current-location" class="text-yellow-950 large-txt">
                     <!-- content injected by main.js -->
                 </h2>
-                <h1 id="header-heading" class="text-yellow-950 drop-shadow-xl">
+                <h1 id="header-heading" class="text-yellow-950 drop-shadow-xl text-center largest-txt font-semibold">
                     Local Planting Planner
                 </h1>
             </div>
@@ -99,13 +100,13 @@
                 <section id="main-section" class="gradient-background rounded-3xl shadow-2xl hidden">
                     <div class="main-section-container">
                         <!-- Main section heading-->
-                        <h2 id="main-section-heading" class="text-yellow-950">
+                        <h2 id="main-section-heading" class="text-yellow-950 large-txt font-semibold">
                             Recommended Plants:
                         </h2>
 
                         <!-- Item one -->
                         <section id="item0" class="crop">
-                            <h3 id="crop-heading0" class="">
+                            <h3 id="crop-heading0" class="normal-txt">
                                 <!-- content injected by main.js -->
                             </h3>
                             <img id="crop-img0" class="w-2/3 border-2 border-cyan-950 rounded-2xl shadow-2x1 hover:scale-150 transition duration-300 cursor-pointer"
@@ -114,7 +115,7 @@
 
                         <!-- Item two -->
                         <section id="item1" class="crop">
-                            <h3 id="crop-heading1" class="">
+                            <h3 id="crop-heading1" class="normal-txt">
                                 <!-- content injected by main.js -->
                             </h3>
                             <img id="crop-img1" class="w-2/3 border-2 border-cyan-950 rounded-2xl shadow-2x1 hover:scale-150 transition duration-300 cursor-pointer"
@@ -123,7 +124,7 @@
 
                         <!-- Item three -->
                         <section id="item2" class="crop">
-                            <h3 id="crop-heading2" class="">
+                            <h3 id="crop-heading2" class="normal-txt">
                                 <!-- content injected by main.js -->
                             </h3>
                             <img id="crop-img2" class="w-2/3 border-2 border-cyan-950 rounded-2xl shadow-2x1 hover:scale-150 transition duration-300 cursor-pointer"
@@ -132,7 +133,7 @@
                         <!-- Item four -->
 
                         <section id="item3" class="crop">
-                            <h3 id="crop-heading3" class="">
+                            <h3 id="crop-heading3" class="normal-txt">
                                 <!-- content injected by main.js -->
                             </h3>
                             <img id="crop-img3" class="w-2/3 border-2 border-cyan-950 rounded-2xl shadow-2x1 hover:scale-150 transition duration-300 cursor-pointer"
@@ -141,7 +142,7 @@
 
                         <!-- Main section footer -->
                         <h2 id="main-section-footer">
-                            <!-- Empty? -->
+                            <!-- Empty -->
                         </h2>
                     </div>
                 </section>
@@ -149,31 +150,31 @@
                 <!-- Sidebar one -->
                 <section id="sidebar1" class="gradient-background rounded-full shadow-2xl">
                     <div class="sidebar1-container">
-                        <h2 id="sidebar1-heading" class="text-yellow-950">
+                        <h2 id="sidebar1-heading" class="text-yellow-950 normal-txt font-semibold p-2">
                             Hardiness Zone:
                         </h2>
-                        <h1 id="zone-result" class="">
+                        <h1 id="zone-result" class="largest-txt">
                             <!-- content injected by main.js -->
                         </h2>
                     </div>
                 </section>
 
                 <!-- Sidebar two -->
-                <section id="sidebar2" class="gradient-background rounded-3xl shadow-2xl">
+                <section id="sidebar2" class="gradient-background rounded-3xl shadow-2xl p-2">
                     <div class="sidebar2-container">
-                        <h2 id="sidebar2-heading" class="text-yellow-950">
+                        <h2 id="sidebar2-heading" class="text-yellow-950 normal-txt font-semibold">
                             Average Date to Plant
                         </h2>
-                        <h3 id="per-heading" class="hidden">
+                        <h3 id="per-heading" class="hidden normal-txt font-semibold">
                             Perennials:
                         </h3>
-                        <p id="per-result">
+                        <p id="per-result" class="normal-txt">
                             <!-- content injected by main.js -->
                         </p>
-                        <h3 id="ann-heading" class="hidden">
+                        <h3 id="ann-heading" class="hidden normal-txt font-semibold">
                             Annuals:
                         </h3>
-                        <p id="ann-result">
+                        <p id="ann-result" class="normal-txt">
                             <!-- content injected by main.js -->
                         </p>
                     </div>
@@ -183,12 +184,12 @@
 
         <footer id="footer" class="gradient-background p-5">
             <div class="footer-container">
-                <p id="link1" class="text-yellow-950 txt-small">
-                    Geolocation provided by <a class="text-yellow-950 font-semibold underline"
+                <p id="link1" class="text-yellow-950 small-txt text-center">
+                    Geolocation provided by <a class="text-yellow-950 font-semibold"
                         href="https://openweathermap.org/api/geocoding-api">OpenWeather</a>
                 </p>
-                <p id="link2" class="text-yellow-950 txt-small">
-                    Hardiness Zone provided by <a class="text-yellow-950 font-semibold underline"
+                <p id="link2" class="text-yellow-950 small-txt text-center">
+                    Hardiness Zone provided by <a class="text-yellow-950 font-semibold"
                         href="https://rapidapi.com/fireside-worldwide-fireside-worldwide-default/api/plant-hardiness-zone">RapidAPI</a>
                 </p>
             </div>
@@ -197,26 +198,18 @@
         <!-- Error Modal -->
         <section id="error-modal" class="hidden absolute inset-0 bg-rose-800 rounded-3xl shadow-2xl">
             <div class="modal-container">
-                <h2 id="error-txt" class="txt-large text-rose-200">
+                <h2 id="error-txt" class="text-rose-200 large-txt">
                     Error!
                 </h2>
-                <p id="error-code" class="txt-normal text-rose-200">
+                <p id="error-code" class="text-rose-200 normal-txt">
                 </p>
-                <button id="error-button" class="w-24 bg-rose-400 px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-100 hover:text-rose-400 txt-normal">
+                <button id="error-button" class="w-24 bg-rose-400 px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-100 hover:text-rose-400 normal-txt">
                     Ok
                 </button>
             </div>
         </section>
         
     </div>
-
-        <script
-        src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-        crossorigin="anonymous"
-      ></script>
-  
-
 </body>
 
 </html>

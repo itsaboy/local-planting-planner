@@ -1,56 +1,44 @@
+/* Custom Fonts */
+
 @font-face {
     font-family: Asap;
     src: url("../fonts/Asap.ttf");
 }
 
+/* Error Modal */
+
 .restrict {
     opacity: 0.5;
 }
+
+/* Background gradient */
 
 .gradient-background {
     background: radial-gradient(rgb(248, 198, 73),yellowGreen)
 }
 
-body .body-container {
-    font-family: Asap;
-    margin-bottom: 100px;
+/* Text Classes */
+
+.largest-txt {
+    font-size: clamp(3rem, 3vh + 1rem, 5rem);
 }
 
-body h1 {
-    letter-spacing: .02em;
-    font-weight: 900;
-    font-size: 2.2rem;
+.large-txt {
+    font-size: clamp(2rem, 2.5vh + 1rem, 2.5rem);
 }
 
-body h2 {
-    font-weight: 600;
-    font-size: 1.75rem;
+.normal-txt {
+    font-size: clamp(1rem, 0.5vh + 1rem, 1.75rem);
 }
 
-body h3 {
-    font-weight: 500;
-    font-size: 1.2rem;
+.small-txt {
+    font-size: clamp(0.25rem, 0.25vw + 1rem, 1.25rem);
 }
 
-body p {
-    font-weight: 500;
-    font-size: 1.25rem;
-}
-
-body button {
-    font-weight: 700;
-}
+/* Background image */
 
 #main {
     background-image: url("/assets/images/FALL\ SEP1\ -\ NOV\ 30.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.gradient-background {
-    background: radial-gradient(rgb(248, 198, 73),yellowGreen)
-}
-
-#zone-result {
-    font-size: 40px;
 }

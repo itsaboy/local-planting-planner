@@ -1,0 +1,160 @@
+/* ==========================================================================
+   Screen Width Below 920 Pixels
+========================================================================== */
+
+@media only screen and (max-width: 920px) {
+
+    /* Header Container */
+
+    .header-container {
+        grid-template-areas:
+        "header-heading"
+        "zip-form"
+        "current-location";
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    /* Form Container */
+
+    .form-container {
+        margin: 0 auto;
+    }
+
+    /* Search Container */
+
+    .search-container {
+        display: grid;
+        grid-template-areas: 
+        "top"
+        "center"
+        "bottom";
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        width: 90%;
+        gap: 1rem;
+    }
+
+    #top {
+        width: 100%
+    }
+    
+    #left {
+        display: none;
+    }
+        
+    #right {
+        display: none;
+    }
+
+    /* Result Container */
+
+    .result-container {
+        grid-template-areas:
+        "sidebar1 sidebar2"
+        "main-section main-section";
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        gap: 1rem;
+    }
+
+    /* Footer Container */
+
+    .footer-container {
+        display: grid;
+        grid-template-areas:
+        "link1"
+        "link2";
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+    
+    /* Error Modal */
+
+    #error-modal {
+        width: 50%;
+    }
+
+}
+
+/* ==========================================================================
+   Screen Width Below 576 Pixels
+========================================================================== */
+
+@media only screen and (max-width: 576px) {
+
+    /* Body Container */
+
+    .body-container {
+        grid-template-rows: 1fr 4fr 8rem;
+    }
+    
+     /* Form Container */
+
+    .form-container {
+        grid-template-areas:
+        "search-label"
+        "zip-input"
+        "submit-button"
+        "history-label"
+        "dropdown"
+        "load-button";
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    #submit-button {
+        place-self: center;
+    }
+
+    #load-button {
+        place-self: center;
+    }
+    
+    /* Result Container */
+
+    .result-container {
+        grid-template-areas:
+        "sidebar1"
+        "sidebar2"
+        "main-section";
+        grid-template-rows: repeat(2, 1fr) 4fr;
+        grid-template-columns: 1fr;
+        height: 100%;
+        width: 90%;
+        gap: 1rem;
+    }
+
+    #sidebar1 {
+        height: 90%;
+    }
+
+    #sidebar2 {
+        height: 90%;
+    }
+
+    /* Main Section Container */
+
+    .main-section-container {
+        grid-template-areas:
+        "main-section-heading"
+        "item0"
+        "item1"
+        "item2"
+        "item3"
+        "main-section-footer";
+        grid-template-rows: 0.75fr repeat(4, 2fr) 0.5fr;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    /* Error Modal */
+
+    #error-modal {
+        width: 75%;
+    }
+
+}

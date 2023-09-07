@@ -8,7 +8,7 @@
     "header"
     "main"
     "footer";
-    grid-template-rows: 1fr 9fr 5rem;
+    grid-template-rows: 2fr 8fr 1fr;
     grid-template-columns: 1fr;
     height: 100vh;
     gap: 1rem;
@@ -40,6 +40,7 @@
     grid-template-columns: repeat(3, 1fr);
     height: 100%;
     place-items: center;
+    gap: 3rem;
 }
 
 /* Header Item IDs */
@@ -69,6 +70,7 @@
     width: 75%;
     height: 100%;
     place-items: center;
+    gap: 0.5rem;
 }
 
 /* Form Item IDs */
@@ -166,10 +168,14 @@
 
 #sidebar1 {
     grid-area: sidebar1;
+    height: 75%;
+    margin: auto 0;
 }
 
 #sidebar2 {
     grid-area: sidebar2;
+    height: 75%;
+    margin: auto 0;
 }
 
 /* Main Section Container
@@ -182,7 +188,7 @@
     "item0 item1"
     "item2 item3"
     "main-section-footer main-section-footer";
-    grid-template-rows: 0.75fr repeat(2, 2fr) 0.5fr;
+    grid-template-rows: 1fr repeat(2, 2fr) 0.5fr;
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
     width: 80%;
@@ -196,6 +202,7 @@
 
 #main-section-heading {
     grid-area: main-section-heading;
+    place-self: end center;
 }
 
 #item0 {
@@ -226,11 +233,6 @@
 /* Sidebar1 Container
 ========================================================================== */
 
-#sidebar1 {
-    height: 50%;
-    margin: auto 0;
-}
-
 .sidebar1-container {
     display: grid;
     grid-template-areas:
@@ -251,15 +253,11 @@
 
 #zone-result {
     grid-area: zone-result;
+    place-self: start center;
 }
 
 /* Sidebar2 Container
 ========================================================================== */
-
-#sidebar2{
-    height: 50%;
-    margin: auto 0;
-}
 
 .sidebar2-container {
     display: grid;
@@ -307,6 +305,7 @@
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
     place-items: center;
+    gap: 0.25rem;
 }
 
 /* Footer Item IDs */
