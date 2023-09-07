@@ -37,9 +37,9 @@
                         <label id="search-label" for="zip-input" class="text-yellow-950 font-semibold">
                             Search:
                         </label>
-                        <input id="zip-input" class="w-48 px-4 txt-normal text-center" placeholder="Enter Zip-Code">
+                        <input id="zip-input" class="w-42 px-3 txt-normal text-center" placeholder="Enter Zip-Code">
                         <button id="submit-button"
-                            class="w-32 rounded-3xl px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-300 hover:text-white">
+                            class="w-32 rounded-3xl px-3 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-300 hover:text-white">
                             Submit
                         </button>
                         <label id="history-label" for="dropwdown" class="text-yellow-950  font-semibold">
@@ -59,7 +59,7 @@
                 <h2 id="current-location" class="text-yellow-950">
                     <!-- content injected by main.js -->
                 </h2>
-                <h1 id="header-heading" class="text-yellow-950 drop-shadow-xl">
+                <h1 id="header-heading">
                     Local Planting Planner
                 </h1>
             </div>
@@ -68,18 +68,15 @@
         <main id="main">
             <!--Front page-->
             <div class="search-container">
-                <section id="top">
-                    <p>
-                        Tell us where you're from! This way we can provide you with plants and veggies that will grow
-                        well in your particular zip code!
-                    </p>
+                <section class = "bg-gray-50/60 p-3 rounded">
+                        <h2>Tell us where you're from!</h2>
+                        <p>This way we can provide you with plants and veggies that will grow well in your particular zip code!</p>
                 </section>
-
                 <section id="center" class="card">
                     <img src="assets/images/map_720.jpg" alt="Hardiness Zone">
                 </section>
                 <section id="bottom">
-                    <p>
+                    <p class = "bg-gray-50/60 p-3 rounded">
                         Hardiness zone description
                     </p>
                 </section>
@@ -179,12 +176,12 @@
 
         <footer id="footer" class="gradient-background p-5">
             <div class="footer-container">
-                <p id="link1" class="text-yellow-950 txt-small">
-                    Geolocation provided by <a class="text-yellow-950 font-semibold underline"
+                <p id="link1">
+                    Geolocation provided by <a class="text-yellow-950 font-black underline"
                         href="https://openweathermap.org/api/geocoding-api">OpenWeather</a>
                 </p>
-                <p id="link2" class="text-yellow-950 txt-small">
-                    Hardiness Zone provided by <a class="text-yellow-950 font-semibold underline"
+                <p id="link2">
+                    Hardiness Zone provided by <a class="text-yellow-950 font-black underline"
                         href="https://rapidapi.com/fireside-worldwide-fireside-worldwide-default/api/plant-hardiness-zone">RapidAPI</a>
                 </p>
             </div>

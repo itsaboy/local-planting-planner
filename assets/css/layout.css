@@ -126,20 +126,9 @@
 
 #top {
     grid-area: top;
-    width: 33%
+    width: 75%
 }
 
-#left {
-    grid-area: left;
-}
-
-#center {
-    grid-area: center;
-}
-
-#right {
-    grid-area: right;
-}
 
 #bottom {
     grid-area: bottom;
