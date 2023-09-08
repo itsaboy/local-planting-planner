@@ -7,14 +7,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible">
     <title>Local Planting Planner</title>
-    <meta name="description" content="">
+    <meta name="description" content="Website that helps gardeners/farmers know which plants will do best over the winter depending on their location">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- External Scripts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
-    <!-- Internal CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/layout.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -26,7 +26,7 @@
     <script src="./assets/scripts/init.js" defer></script>
 </head>
 
-<body>
+<body class="bg-orange-900">
     <div class="body-container">
 
         <!-- Header -->
@@ -51,7 +51,7 @@
                             </option>
                         </select>
                         <button id="load-button"
-                            class="w-32 rounded-3xl  px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-100 hover:text-white">
+                            class="w-32 rounded-3xl px-4 py-1 border-2 border-slate-950 hover:bg-slate-950 hover:border-slate-100 hover:text-white">
                             Load
                         </button>
                     </div>
@@ -94,7 +94,7 @@
 
                         <!-- Item one -->
                         <section id="item0" class="crop">
-                            <h3 id="crop-heading0" class="">
+                            <h3 id="crop-heading0">
                                 <!-- content injected by main.js -->
                             </h3>
                             <img id="crop-img0"
@@ -104,7 +104,7 @@
 
                         <!-- Item two -->
                         <section id="item1" class="crop">
-                            <h3 id="crop-heading1" class="">
+                            <h3 id="crop-heading1">
                                 <!-- content injected by main.js -->
                             </h3>
                             <img id="crop-img1"
@@ -114,7 +114,7 @@
 
                         <!-- Item three -->
                         <section id="item2" class="crop">
-                            <h3 id="crop-heading2" class="">
+                            <h3 id="crop-heading2">
                                 <!-- content injected by main.js -->
                             </h3>
                             <img id="crop-img2"
@@ -124,7 +124,7 @@
                         <!-- Item four -->
 
                         <section id="item3" class="crop">
-                            <h3 id="crop-heading3" class="">
+                            <h3 id="crop-heading3">
                                 <!-- content injected by main.js -->
                             </h3>
                             <img id="crop-img3"
@@ -145,9 +145,9 @@
                         <h2 id="sidebar1-heading" class="text-yellow-950">
                             Hardiness Zone:
                         </h2>
-                        <h1 id="zone-result" class="">
+                        <h3 id="zone-result">
                             <!-- content injected by main.js -->
-                            </h2>
+                        </h3>
                     </div>
                 </section>
 
@@ -203,11 +203,6 @@
         </section>
 
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>
