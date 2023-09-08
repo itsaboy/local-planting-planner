@@ -205,7 +205,7 @@ const agave = {
 
 const geraniums = {
     name: "Geraniums",
-    image: "./assets/images/geranium.jpg"
+    image: "./assets/images/geraniums.jpg"
 }
 
 //Zone 11

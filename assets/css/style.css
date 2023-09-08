@@ -13,33 +13,9 @@
 
 body .body-container {
     font-family: Asap;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
-body h1 {
-    letter-spacing: .02em;
-    font-weight: 900;
-    font-size: 3rem;
-}
-
-body h2 {
-    font-weight: 600;
-    font-size: 1.75rem;
-}
-
-body h3 {
-    font-weight: 500;
-    font-size: 1.2rem;
-}
-
-body p {
-    font-weight: 500;
-    font-size: 1.25rem;
-}
-
-body button {
-    font-weight: 700;
-}
 
 #main {
     background-image: url("/assets/images/FALL\ SEP1\ -\ NOV\ 30.jpg");
