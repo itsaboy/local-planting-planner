@@ -64,7 +64,7 @@ const loadData = () => {
 // Adds dropdown array items as options to the dropdown element
 const populateDropdown = () => {
     $("#dropdown").empty();
-    $("#dropdown").append(`<option selected disabled>City</option>`);     
+    $("#dropdown").append(`<option selected disabled>Location</option>`);     
     for (let i = 0; i < dropdownArray.length; i++) {
         let newOption = $(`<option>${dropdownArray[i].city}</option>`);
         newOption.attr("city", `${dropdownArray[i].city}`).attr("zone", `${dropdownArray[i].zone}`);
