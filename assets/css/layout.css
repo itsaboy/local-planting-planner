@@ -10,7 +10,7 @@
     "footer";
     grid-template-rows: 1fr 9fr 5rem;
     grid-template-columns: 1fr;
-    height: 100vh;
+    height: 100vw;
     gap: 1rem;
 }
 
@@ -111,7 +111,7 @@
     gap: .5rem;
     text-align: center;
     padding: 1.5rem;
-    width: 50%;
+    width: 100vw;
     margin: 0 auto;
     
 
@@ -222,7 +222,7 @@
 ========================================================================== */
 
 #sidebar1 {
-    height: 50%;
+    height: 100vw;
     margin: auto 0;
 }
 
@@ -252,7 +252,7 @@
 ========================================================================== */
 
 #sidebar2{
-    height: 50%;
+    height: 100vw;
     margin: auto 0;
 }
 
@@ -334,3 +334,61 @@
     height: 100%;
     place-items: center;
 }
+
+@media (max-width: 786px) {
+
+    html {
+        overflow-x: hidden;
+    }
+
+
+    #header {
+        width: 100vw;
+    }
+
+    .header-container {
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #header-heading {
+        width: 100vw;
+        order: 1;
+        margin-bottom: 25px;
+    }
+
+    #zip-form {
+        width: 100vw;
+        overflow-x: hidden;
+        order: 2;
+    }
+
+    .search-container {
+        overflow-x: hidden;
+        
+    }
+
+    #body {
+        overflow-x: hidden;     
+    }
+
+    #main {
+        width: 100vw;      
+        overflow-x: hidden;  
+
+    }
+
+    .result-container {
+        width: 100vw;
+    }
+
+    #footer {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+
+}
+
