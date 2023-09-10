@@ -337,10 +337,6 @@
 
 @media (max-width: 786px) {
 
-    html {
-         overflow: hidden;
-    }
-
 
     #header {
         width: 100vw;
@@ -363,7 +359,6 @@
     #zip-form {
         height: 100px;
         width: 400px;
-        overflow-x: hidden;
         order: 2;
     }
 
@@ -505,3 +500,86 @@
         }
 
 } 
+
+@media (max-height: 420px) {
+    
+    #header {
+        width: 100vw;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #header-heading {
+        text-align: center;
+        width: 100%;
+        order: 1;
+        margin-right: 35px;
+        margin-bottom: 20px;
+    }
+
+    #zip-form {
+         width: 400px;
+         overflow-x: hidden;
+         order: 2;
+    }
+
+    #current-location {
+        order: 3;
+    }
+
+    #submit-button{
+        width: 100px;
+        margin: 5px;
+    }
+
+    #load-button {
+        width: 100px;
+        margin: 5px;
+    }
+
+    #body {
+         overflow-x: hidden;     
+    }
+
+    .body-container {
+        height: 100vh;
+         overflow-x: hidden;
+    }
+
+    #main {
+         width: 100vw;      
+         height: 720px;
+         overscroll-behavior: inherit;
+    }
+
+    #main-section {
+        width: 100vh;
+    }
+
+    #sidebar1 {
+        width: 100vh;
+        margin: auto;
+    }
+
+    #sidebar2 {
+        width: 100vh;
+        margin: auto;
+    }
+
+    .result-container {
+        width: 75vw;
+        height: 640px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #footer {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+}
