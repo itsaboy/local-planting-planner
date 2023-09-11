@@ -1,22 +1,44 @@
-# local-planting-planner
+# Local Planting Planner
 
-## PROJECT DESCRIPTION
+## Description
 
-This is a website to display produce/plants safe to plant in the user's area. 
-There is an input for the user to type in their state of residence which will determine which climate zone and the time of year to load results.
+https://itsaboy.github.io/local-planting-planner/
 
-## USER STORY
+This is a website to display produce/plants safe to plant in the user's area. There is an input for the user to type in their state of residence which will determine which climate zone and the time of year to load results.
 
-AS A gardener/farmer
+## Table of Contents (Optional)
 
-I WANT to see what kind of plants and produce I can plant in my area
- based on ground hardness, temperature, and time of year for my specific climate zone.
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
-SO THAT I can effectively plan what to plant for the current season.
+## Usage
 
-## USAGE
 
-![wireframe-img](assets/images/image.png)
 
-## CREDIT
-Hardiness Zone - from https://www.cottagefarmsdirect.com/TheScoop/what-does-hardiness-zone-mean-to-me-90
+## Credits
+
+Developers:
+
+--------------
+
+Josiah Smith
+
+Pam Willis
+
+Zach Something
+
+David Honeycutt
+
+Catherine Volger
+
+---------------
+
+Other Sources
+
+---------------
+
+## License
+
+MIT License
+
