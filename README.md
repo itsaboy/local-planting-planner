@@ -6,7 +6,7 @@ https://itsaboy.github.io/local-planting-planner/
 
 This is a website to display produce/plants safe to plant in the user's area. There is an input for the user to type in their state of residence which will determine which climate zone and the time of year to load results.
 
-## Table of Contents (Optional)
+## Table of Contents
 
 - [Usage](#usage)
 - [Credits](#credits)
@@ -20,23 +20,17 @@ This is a website to display produce/plants safe to plant in the user's area. Th
 
 Developers:
 
---------------
 
 Josiah Smith
 
 Pam Willis
 
-Zach Something
+Zach Richardson
 
 David Honeycutt
 
-Catherine Volger
+Katherine Volger
 
----------------
-
-Other Sources
-
----------------
 
 ## License
 
