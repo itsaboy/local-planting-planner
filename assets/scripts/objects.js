@@ -22,7 +22,7 @@ const lilyOfTheValley = {
 //Zone 2
 const carrots = {
     name: "Carrots",
-    image: "./assets/images/carrot.jpg"
+    image: "./assets/images/carrot.png"
 }
 
 const onions = {
@@ -37,13 +37,13 @@ const poppies = {
 
 const juniper = {
     name: "Juniper",
-    image: "./assets/images/Juniper.jpg"
+    image: "./assets/images/Juniper.png"
 }
 
 //Zone 3
 const asparagus = {
     name: "Asparagus",
-    image: "./assets/images/asparagus.jpg"
+    image: "./assets/images/asparagus.png"
 }
 
 const cucumbers = {
@@ -174,7 +174,7 @@ const broccoli = {
 
 const avocado = {
     name: "Avocado",
-    image: "./assets/images/acocado.jpg"
+    image: "./assets/images/avocado.jpg"
 }
 
 const oranges = {
