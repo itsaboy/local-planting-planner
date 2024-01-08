@@ -1,5 +1,7 @@
-// Gets city name based on zip code input
-const getLocation = async () => {
+'// Gets city name based on zip code input
+c
+
+onst getLocation = async () => {
     const req = `${baseGeocodeURL}/geo/1.0/zip?zip=${userZipCode}&appid=${geocodeAPIKey}`;
     const res = await fetch(req);
     const locationData = await res.json();
